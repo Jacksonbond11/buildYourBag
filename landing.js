@@ -6,8 +6,10 @@ let signUpModal = document.getElementById("signUpModal");
 let signUpBtn = document.getElementById("signUp");
 let signUpSubmitBtn = document.getElementById("signUpSubmit");
 let loginSubmitBtn = document.getElementById("loginSubmitButton");
+let startBuilding = document.getElementById("start-building");
 let username;
 let isLoggedIn;
+
 // LOGIN
 signInBtn.onclick = function () {
   console.log("clicked");
@@ -64,6 +66,11 @@ function updateUI() {
 }
 
 //Functions
+startBuilding.onclick = function () {
+  console.log("clicked");
+  window.location.href = "http://127.0.0.1:5500/pages/bag.html";
+};
+
 function createUserAccount() {
   var email = document.getElementById("emailInput").value;
   var username = document.getElementById("usernameInput").value;

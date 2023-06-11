@@ -14,4 +14,4 @@ Content-Type: application/json
 
 GET http://localhost:3000/get-discs
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NzIzMTI1MTk0NjczMzU2ODEiLCJpYXQiOjE2ODY0MzU3MjJ9.TpwJK-xJf6mftnrvOBa_mVs5xD_jF-Xr7M7XtdxjXZw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NzIzMTI1MTk0NjczMzU2ODEiLCJpYXQiOjE2ODY0NjAxMzh9.EXiYj3mP2B_XrsHBANTbeJTZQ36rArbIsqeCzEwjcwo
