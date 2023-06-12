@@ -103,8 +103,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 startBuilding.onclick = function () {
-  console.log("clicked");
-  window.location.href = "http://127.0.0.1:5500/bag.html";
+  let jwt = localStorage.getItem("accessToken");
+  if (jwt && jwt.trim() !== "") {
+    window.location.href = "http://127.0.0.1:5500/bag.html";
+  } else {
+    loginModal.style.display = "block";
+  }
 };
 
 function createUserAccount() {
