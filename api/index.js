@@ -24,6 +24,7 @@ app.use(
     origin: "http://127.0.0.1:5500", // replace with the origin of your front end
   })
 );
+app.use(express.static(__dirname + "/public/"));
 
 app.get("/search", async (req, res) => {
   console.log("SEARCH CALLED");
