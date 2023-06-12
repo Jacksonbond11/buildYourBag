@@ -1,222 +1,238 @@
-let loginModal = document.getElementById("loginModal");
-let signInBtn = document.getElementById("signIn");
-let span = document.getElementsByClassName("close")[0];
-let signUpSpan = document.getElementsByClassName("close")[1];
-let signUpModal = document.getElementById("signUpModal");
-let signUpBtn = document.getElementById("signUp");
-let signUpBtn2 = document.getElementById("signUp2");
-let signUpSubmitBtn = document.getElementById("signUpSubmit");
-let loginSubmitBtn = document.getElementById("loginSubmitButton");
-let startBuilding = document.getElementById("start-building");
-let profileBtn = document.getElementById("profile");
-let logoutBtn = document.getElementById("logout");
-let username;
-let isLoggedIn;
+const express = require("express");
+const { Pool } = require("pg");
+const cors = require("cors");
+const app = express();
+const bcrypt = require("bcryptjs");
+const port = 3000;
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
 
-// LOGIN
-signInBtn.onclick = function () {
-  console.log("signInBtn clicked");
-  loginModal.style.display = "block";
-};
+const pool = new Pool({
+  user: process.env.DATABASE_USER_SECRET,
+  host: process.env.DATABASE_HOST_SECRET,
+  database: process.env.DATABASE_DATABASE_SECRET,
+  password: process.env.DATABASE_PASSWORD_SECRET,
+  port: 26257,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
 
-span.onclick = function () {
-  loginModal.style.display = "none";
-  console.log("Span clicked");
-};
+app.use(express.json()); // Add this line
+app.use(
+  cors({
+    origin: "http://127.0.0.1:5500", // replace with the origin of your front end
+  })
+);
 
-window.onclick = function (event) {
-  if (event.target == loginModal) {
-    loginModal.style.display = "none";
-  }
-};
+app.get("/search", async (req, res) => {
+  console.log("SEARCH CALLED");
+  const query = req.query.q;
+  console.log(query);
+  const result = await pool.query(
+    "SELECT name FROM discs WHERE name ILIKE $1 LIMIT 10",
+    ["%" + query + "%"]
+  );
+  res.json(result.rows);
+  console.log("results: " + result);
+});
 
-// SIGN UP
-signUpBtn.onclick = function () {
-  console.log("signUpBtn clicked");
-  signUpModal.style.display = "block";
-};
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
 
-signUpSpan.onclick = function () {
-  signUpModal.style.display = "none";
-  console.log("Span clicked");
-};
+app.get("/discdata", async (req, res) => {
+  console.log("Clicked disc");
+  const discname = req.query.q;
+  const result = await pool.query(
+    `SELECT name, brand, category, speed, glide, turn, fade, pic, purchase_url FROM discs WHERE name = $1`,
+    [discname]
+  );
+  res.json(result.rows);
+});
 
-signUpBtn2.onclick = function () {
-  loginModal.style.display = "none";
-  signUpModal.style.display = "block";
-};
-window.onclick = function (event) {
-  if (event.target == signUpModal) {
-    signUpModal.style.display = "none";
-  }
-  if (event.target == loginModal) {
-    loginModal.style.display = "none";
-  }
-};
-
-loginSubmitBtn.onclick = function () {
-  console.log("loginSubmitBtn clicked");
-  login();
-};
-
-//Event Listeners
-document.addEventListener("DOMContentLoaded", function () {
-  var signUpButton = document.getElementById("signUpSubmit");
-  signUpButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    createUserAccount();
-  });
-  // Check if user is logged in
-  const token = localStorage.getItem("accessToken");
-  if (token) {
-    fetch("http://localhost:3000/userinfo", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + token,
-      },
-    })
-      .then(function (response) {
-        if (response.ok) {
-          console.log("Retrieved user info successfully");
-          return response.json();
-        } else {
-          console.log("Error retrieving user info:", response.status);
-          throw new Error("Get user info request failed");
-        }
-      })
-      .then(function (data) {
-        console.log(data);
-        username = "≡  " + data.username;
-
-        // Update login and signup buttons
-        profileBtn.innerText = username;
-        signInBtn.style.display = "none";
-        signUpBtn.style.display = "none";
-      })
-      .catch(function (error) {
-        console.log("Error retrieving user info:", error);
-      });
-
-    startBuilding.innerText = "View Your Bag";
+//add user bag info to database
+app.post("/add-disc", authenticateToken, async (req, res) => {
+  console.log("add disc called");
+  const discName = req.body.discName;
+  let userId = req.userId;
+  try {
+    await pool.query(
+      "INSERT INTO user_bags (user_id, disc_name) VALUES ($1, $2)",
+      [userId, discName]
+    );
+    res.json({ success: true });
+  } catch (err) {
+    console.error(err);
+    res.json({ success: false });
   }
 });
 
-startBuilding.onclick = function () {
-  console.log("clicked");
-  window.location.href = "http://127.0.0.1:5500/bag.html";
-};
-
-function createUserAccount() {
-  var email = document.getElementById("emailInput").value;
-  var username = document.getElementById("usernameInput").value;
-  var password = document.getElementById("passwordInput").value;
-  var date = new Date();
-
-  var formData = {
-    email: email,
-    username: username,
-    password: password,
-    salt: "", // Add salt value here if applicable
-    creation_date: date, // Add creation date value here if applicable
-  };
-
-  fetch("http://localhost:3000/createAccount", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  })
-    .then(function (response) {
-      if (response.ok) {
-        console.log("Account created successfully!");
-        newAccountSuccess();
-        return response.json();
-        // Redirect or display a success message to the user
-      } else {
-        console.log("Error creating account:", response.status);
-        // Display an error message to the user
-      }
-    })
-    .then(function (data) {
-      let jwt = data.accessToken;
-      localStorage.setItem("accessToken", jwt);
-      console.log("token stored " + jwt);
-      console.log(data.username);
-      profileBtn.innerText = "≡  " + data.username;
-      signUpBtn.style.display = "none";
-      signInBtn.style.display = "none";
-      signUpModal.style.display = "none";
-    })
-
-    .catch(function (error) {
-      console.log("Error creating account:", error);
-      // Display an error message to the user
-    });
-
-  startBuilding.innerText = "View Your Bag";
-}
-
-function newAccountSuccess() {
-  console.log("called");
-  let tempModal = document.getElementsByClassName("modal-content");
-  tempModal[0].innerHTML = "Account Created Successfully";
-}
-
-function login() {
-  console.log("login called");
-  var email = document.getElementById("loginEmail").value;
-  var password = document.getElementById("loginPassword").value;
-  var formData = {
-    email: email,
-    password: password,
-  };
-
-  fetch("http://localhost:3000/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  })
-    .then(function (response) {
-      if (response.ok) {
-        console.log("Logged in successfully");
-        return response.json();
-      } else {
-        console.log("Error logging in:", response.status);
-        throw new Error("Login request failed");
-      }
-    })
-    .then(function (data) {
-      console.log(data);
-      let jwt = data.accessToken;
-      localStorage.setItem("accessToken", jwt);
-      console.log("token stored " + jwt);
-      username = data.username;
-
-      profileBtn.innerText = "≡  " + username;
-      signUpBtn.style.display = "none";
-      signInBtn.style.display = "none";
-      loginModal.style.display = "none";
-    })
-    .catch(function (error) {
-      console.log("Error logging in:", error);
-    });
-
-  startBuilding.innerText = "View Your Bag";
-}
-
-profileBtn.onclick = function () {
-  if (profileModal.style.display === "block") {
-    profileModal.style.display = "none";
-  } else {
-    profileModal.style.display = "block";
+app.get("/get-discs", authenticateToken, async (req, res) => {
+  let userId = req.userId;
+  console.log("get discs called with user id " + userId); // Grab the userId from the request parameters
+  try {
+    const result = await pool.query(
+      "SELECT disc_name FROM user_bags WHERE user_id = $1",
+      [userId]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res
+      .status(500)
+      .json({ error: "An error occurred while retrieving discs." });
   }
-};
+});
 
-logoutBtn.onclick = function () {
-  localStorage.removeItem("accessToken");
-  location.href = "index.html";
-};
+app.delete("/remove-disc", authenticateToken, async (req, res) => {
+  const { userId, discName } = req.body;
+
+  try {
+    await pool.query(
+      "DELETE FROM user_bags WHERE user_id = $1 AND disc_name = $2",
+      [userId, discName]
+    );
+
+    res.json({ success: true });
+  } catch (err) {
+    console.error(err);
+    res.json({ success: false, error: err.message });
+  }
+});
+
+app.get("/get-category-count", authenticateToken, async (req, res) => {
+  let userId = req.userId; // Get the userId from the request query parameters
+  console.log("get disc stats called with user id " + userId);
+  try {
+    const result = await pool.query(
+      "SELECT category, COUNT(*) as count FROM user_bags ub LEFT JOIN discs d ON d.name = ub.disc_name WHERE user_id = $1 GROUP BY category",
+      [userId]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res
+      .status(500)
+      .json({ error: "An error occurred while retrieving disc stats." });
+  }
+});
+
+app.get("/get-average-speed", authenticateToken, async (req, res) => {
+  let userId = req.userId;
+  console.log("get average called with user id of " + userId);
+  try {
+    const result = await pool.query(
+      `SELECT category, Round(AVG(speed),2) 
+      FROM user_bags ub LEFT JOIN discs d ON d.name = ub.disc_name 
+      WHERE user_id = $1 
+      GROUP BY category`,
+      [userId]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    console.error("Error:", err);
+    res
+      .status(500)
+      .json({ error: "An error occurred while retrieving the average speed." });
+  }
+});
+
+app.post("/createAccount", async (req, res) => {
+  console.log("createAccount called");
+  let { email, username, password, creation_date } = req.body;
+
+  try {
+    const saltRounds = 10;
+    const salt = await bcrypt.genSalt(saltRounds);
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    const result = await pool.query(
+      `INSERT INTO users (email, username, password, salt, creation_date) VALUES ($1, $2, $3, $4, $5) RETURNING userid, username`,
+      [email, username, hashedPassword, salt, creation_date]
+    );
+    const user = result.rows[0];
+    const payload = { userId: user.userid }; // Changed this from email to userId
+    const accessToken = jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET);
+    console.log(user.username);
+    res.json({
+      message: "Login successful",
+      username: user.username,
+      accessToken: accessToken,
+    });
+  } catch (err) {
+    console.error(err);
+    res
+      .status(500)
+      .json({ error: "An error occurred while creating the account." });
+  }
+});
+
+app.post("/login", async (req, res) => {
+  console.log("login called");
+  let { email, password } = req.body;
+
+  try {
+    const result = await pool.query(`SELECT * FROM users WHERE email = $1`, [
+      email,
+    ]);
+    if (result.rows.length === 0) {
+      return res.status(401).json({ error: "Invalid email or password" });
+    }
+    const user = result.rows[0];
+    const passwordMatch = await bcrypt.compare(password, user.password);
+
+    if (!passwordMatch) {
+      return res.status(401).json({ error: "Invalid email or password" });
+    }
+
+    // Login successful
+    const payload = { userId: user.userid }; // Changed this from email to userId
+    const accessToken = jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET);
+    res.json({
+      message: "Login successful",
+      username: user.username,
+      accessToken: accessToken,
+    });
+  } catch (err) {
+    console.error(err);
+    return res
+      .status(500)
+      .json({ error: "An error occurred while logging in" });
+  }
+});
+
+app.get("/userinfo", authenticateToken, async (req, res) => {
+  let userId = req.userId;
+  try {
+    const result = await pool.query(`SELECT * FROM users WHERE userid = $1`, [
+      userId,
+    ]);
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    const user = result.rows[0];
+    res.json({
+      message: "User info retrieved successfully",
+      username: user.username,
+      // Any other user info you'd like to return
+    });
+  } catch (err) {
+    console.error(err);
+    return res
+      .status(500)
+      .json({ error: "An error occurred while retrieving user info" });
+  }
+});
+
+function authenticateToken(req, res, next) {
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+  if (token == null) return res.sendStatus(401);
+
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+    if (err) return res.sendStatus(403);
+    req.userId = user.userId; // We are assuming user here is an object with a property 'userId'
+    next();
+  });
+}
