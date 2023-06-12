@@ -15,12 +15,20 @@
           <li><a href="../pages/products.html">Products</a></li>
           <li><a href="../pages/contact.html">Contact</a></li>
         </ul>
-        <div id="login">
-          <button id="logout">Logout</button>
+        <div class="dropdown-container">
+          <button id="profile"></button>
+          <div id="profileModal" class="profileModal">
+            <div class="profile-modal-content">
+              <button id="logout">Logout</button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <main>
+      <div id="profileModal" class="modal">
+        <button id="logout">Logout</button>
+      </div>
       <div class="container">
         <div id="disc-container">
           <h1>Disc Data</h1>
@@ -28,6 +36,7 @@
         </div>
         <div id="searchAndStats-container">
           <div id="search-container">
+            <h1>Add a Disc</h1>
             <input
               type="text"
               id="search"

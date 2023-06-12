@@ -19,6 +19,15 @@
           <button id="signIn">Login</button>
           <button id="signUp">Sign up</button>
         </div>
+
+        <div class="dropdown-container">
+          <button id="profile"></button>
+          <div id="profileModal" class="profileModal">
+            <div class="profile-modal-content">
+              <button id="logout">Logout</button>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -27,25 +36,32 @@
         <div id="loginModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Email:</p>
+            <p>Email</p>
             <input id="loginEmail" />
-            <p>Password:</p>
+            <p>Password</p>
             <input id="loginPassword" type="password" />
             <button id="loginSubmitButton">Login</button>
+            <br />
+            <p>Don't have an account yet?</p>
+            <button id="signUp2">Create Free Account</button>
           </div>
         </div>
+
         <div id="signUpModal" class="modal">
-          <div class="modal-content-signUp">
+          <div class="modal-content">
+            <p>Create Your Free Account</p>
+            <p></p>
             <span class="close">&times;</span>
+            <p>Username</p>
+            <input id="usernameInput" name="username" />
             <p>Email:</p>
             <input id="emailInput" name="email" type="email" />
-            <p>Username:</p>
-            <input id="usernameInput" name="username" />
-            <p>Password:</p>
+            <p>Password</p>
             <input id="passwordInput" type="password" />
             <button id="signUpSubmit">Create Account</button>
           </div>
         </div>
+
         <div class="hero">
           <img src="../img/hero_bag.png" alt="Hero Image" />
           <div class="hero-text">

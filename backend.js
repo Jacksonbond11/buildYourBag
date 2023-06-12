@@ -148,12 +148,13 @@ app.post("/createAccount", async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, salt);
 
     const result = await pool.query(
-      `INSERT INTO users (email, username, password, salt, creation_date) VALUES ($1, $2, $3, $4, $5) RETURNING userid`,
+      `INSERT INTO users (email, username, password, salt, creation_date) VALUES ($1, $2, $3, $4, $5) RETURNING userid, username`,
       [email, username, hashedPassword, salt, creation_date]
     );
     const user = result.rows[0];
     const payload = { userId: user.userid }; // Changed this from email to userId
     const accessToken = jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET);
+    console.log(user.username);
     res.json({
       message: "Login successful",
       username: user.username,
@@ -198,6 +199,29 @@ app.post("/login", async (req, res) => {
     return res
       .status(500)
       .json({ error: "An error occurred while logging in" });
+  }
+});
+
+app.get("/userinfo", authenticateToken, async (req, res) => {
+  let userId = req.userId;
+  try {
+    const result = await pool.query(`SELECT * FROM users WHERE userid = $1`, [
+      userId,
+    ]);
+    if (result.rows.length === 0) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    const user = result.rows[0];
+    res.json({
+      message: "User info retrieved successfully",
+      username: user.username,
+      // Any other user info you'd like to return
+    });
+  } catch (err) {
+    console.error(err);
+    return res
+      .status(500)
+      .json({ error: "An error occurred while retrieving user info" });
   }
 });
 

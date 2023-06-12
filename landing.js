@@ -4,15 +4,18 @@ let span = document.getElementsByClassName("close")[0];
 let signUpSpan = document.getElementsByClassName("close")[1];
 let signUpModal = document.getElementById("signUpModal");
 let signUpBtn = document.getElementById("signUp");
+let signUpBtn2 = document.getElementById("signUp2");
 let signUpSubmitBtn = document.getElementById("signUpSubmit");
 let loginSubmitBtn = document.getElementById("loginSubmitButton");
 let startBuilding = document.getElementById("start-building");
+let profileBtn = document.getElementById("profile");
+let logoutBtn = document.getElementById("logout");
 let username;
 let isLoggedIn;
 
 // LOGIN
 signInBtn.onclick = function () {
-  console.log("clicked");
+  console.log("signInBtn clicked");
   loginModal.style.display = "block";
 };
 
@@ -29,7 +32,7 @@ window.onclick = function (event) {
 
 // SIGN UP
 signUpBtn.onclick = function () {
-  console.log("clicked");
+  console.log("signUpBtn clicked");
   signUpModal.style.display = "block";
 };
 
@@ -38,14 +41,21 @@ signUpSpan.onclick = function () {
   console.log("Span clicked");
 };
 
+signUpBtn2.onclick = function () {
+  loginModal.style.display = "none";
+  signUpModal.style.display = "block";
+};
 window.onclick = function (event) {
   if (event.target == signUpModal) {
     signUpModal.style.display = "none";
   }
+  if (event.target == loginModal) {
+    loginModal.style.display = "none";
+  }
 };
 
 loginSubmitBtn.onclick = function () {
-  console.log("clicked");
+  console.log("loginSubmitBtn clicked");
   login();
 };
 
@@ -56,14 +66,41 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault(); // Prevent the default form submission behavior
     createUserAccount();
   });
-});
+  // Check if user is logged in
+  const token = localStorage.getItem("accessToken");
+  if (token) {
+    fetch("http://localhost:3000/userinfo", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+    })
+      .then(function (response) {
+        if (response.ok) {
+          console.log("Retrieved user info successfully");
+          return response.json();
+        } else {
+          console.log("Error retrieving user info:", response.status);
+          throw new Error("Get user info request failed");
+        }
+      })
+      .then(function (data) {
+        console.log(data);
+        username = "≡  " + data.username;
 
-function updateUI() {
-  if (isLoggedIn) {
-    let usernameDisplay = document.getElementById("usernameDisplay");
-    usernameDisplay.innerText = username;
+        // Update login and signup buttons
+        profileBtn.innerText = username;
+        signInBtn.style.display = "none";
+        signUpBtn.style.display = "none";
+      })
+      .catch(function (error) {
+        console.log("Error retrieving user info:", error);
+      });
+
+    startBuilding.innerText = "View Your Bag";
   }
-}
+});
 
 //Functions
 startBuilding.onclick = function () {
@@ -96,6 +133,7 @@ function createUserAccount() {
       if (response.ok) {
         console.log("Account created successfully!");
         newAccountSuccess();
+        return response.json();
         // Redirect or display a success message to the user
       } else {
         console.log("Error creating account:", response.status);
@@ -106,17 +144,24 @@ function createUserAccount() {
       let jwt = data.accessToken;
       localStorage.setItem("accessToken", jwt);
       console.log("token stored " + jwt);
+      console.log(data.username);
+      profileBtn.innerText = "≡  " + data.username;
+      signUpBtn.style.display = "none";
+      signInBtn.style.display = "none";
+      signUpModal.style.display = "none";
     })
 
     .catch(function (error) {
       console.log("Error creating account:", error);
       // Display an error message to the user
     });
+
+  startBuilding.innerText = "View Your Bag";
 }
 
 function newAccountSuccess() {
   console.log("called");
-  let tempModal = document.getElementsByClassName("modal-content-signUp");
+  let tempModal = document.getElementsByClassName("modal-content");
   tempModal[0].innerHTML = "Account Created Successfully";
 }
 
@@ -151,9 +196,28 @@ function login() {
       localStorage.setItem("accessToken", jwt);
       console.log("token stored " + jwt);
       username = data.username;
-      updateUI();
+
+      profileBtn.innerText = "≡  " + username;
+      signUpBtn.style.display = "none";
+      signInBtn.style.display = "none";
+      loginModal.style.display = "none";
     })
     .catch(function (error) {
       console.log("Error logging in:", error);
     });
+
+  startBuilding.innerText = "View Your Bag";
 }
+
+profileBtn.onclick = function () {
+  if (profileModal.style.display === "block") {
+    profileModal.style.display = "none";
+  } else {
+    profileModal.style.display = "block";
+  }
+};
+
+logoutBtn.onclick = function () {
+  localStorage.removeItem("accessToken");
+  location.href = "index.html";
+};

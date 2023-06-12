@@ -4,6 +4,8 @@ let bag = document.getElementById("bag");
 let suggestions = document.getElementById("suggestions");
 let search = document.getElementById("search");
 let logoutBtn = document.getElementById("logout");
+let profileBtn = document.getElementById("profile");
+let profileModal = document.getElementById("profileModal");
 //import { isLoggedIn, username } from "./landing.js";
 
 //modal
@@ -16,6 +18,13 @@ window.onload = (event) => {
   console.log(sessionUserID);
 };
 
+profileBtn.onclick = function () {
+  if (profileModal.style.display === "block") {
+    profileModal.style.display = "none";
+  } else {
+    profileModal.style.display = "block";
+  }
+};
 function searchDisc() {
   let query = search.value;
   fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`, {
@@ -268,8 +277,35 @@ bag.addEventListener("click", function (e) {
     displayDiscInfo(selectedDisc);
   }
 });
+
 window.addEventListener("DOMContentLoaded", (event) => {
   refresh();
+  // Check if user is logged in
+  const token = localStorage.getItem("accessToken");
+  if (token) {
+    fetch("http://localhost:3000/userinfo", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+    })
+      .then(function (response) {
+        if (response.ok) {
+          console.log("Retrieved user info successfully");
+          return response.json();
+        } else {
+          console.log("Error retrieving user info:", response.status);
+          throw new Error("Get user info request failed");
+        }
+      })
+      .then(function (data) {
+        profileBtn.innerText = data.username;
+      })
+      .catch(function (error) {
+        console.log("Error retrieving user info:", error);
+      });
+  }
 });
 
 bag.addEventListener("click", function (e) {
@@ -343,3 +379,15 @@ function getUserIdFromToken() {
     return null;
   }
 }
+profileBtn.onclick = function () {
+  if (profileModal.style.display === "block") {
+    profileModal.style.display = "none";
+  } else {
+    profileModal.style.display = "block";
+  }
+};
+
+logoutBtn.onclick = function () {
+  localStorage.removeItem("accessToken");
+  location.href = "index.html";
+};
