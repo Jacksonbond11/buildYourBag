@@ -27,10 +27,13 @@ profileBtn.onclick = function () {
 };
 function searchDisc() {
   let query = search.value;
-  fetch(`http://localhost:3000/search?q=${encodeURIComponent(query)}`, {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  })
+  fetch(
+    `https://build-your-bag.vercel.app/search?q=${encodeURIComponent(query)}`,
+    {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    }
+  )
     .then((response) => {
       if (!response.ok) {
         throw new Error("Failed to fetch search data");
@@ -68,10 +71,14 @@ function searchDisc() {
 }
 
 function displayDiscInfo(discName) {
-  fetch("http://localhost:3000/discdata?q=" + encodeURIComponent(discName), {
-    method: "GET",
-    headers: { "Content-Type": "application/json" },
-  })
+  fetch(
+    "https://build-your-bag.vercel.app/discdata?q=" +
+      encodeURIComponent(discName),
+    {
+      method: "GET",
+      headers: { "Content-Type": "application/json" },
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       var discInfo = data[0]; // Assuming you're expecting a single disc object
@@ -125,7 +132,7 @@ function displayDiscInfo(discName) {
 
 function addToBag(discName) {
   let userId = sessionUserID;
-  fetch("http://localhost:3000/add-disc", {
+  fetch("https://build-your-bag.vercel.app/add-disc", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -144,11 +151,14 @@ function addToBag(discName) {
 
 function loadCategoryCount() {
   const userId = sessionUserID; // replace with actual user ID once implemented
-  fetch(`http://localhost:3000/get-category-count?userId=${userId}`, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
-    },
-  })
+  fetch(
+    `https://build-your-bag.vercel.app/get-category-count?userId=${userId}`,
+    {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
+      },
+    }
+  )
     .then((response) => response.json())
     .then((data) => {
       // get the stats element
@@ -171,7 +181,7 @@ function loadCategoryCount() {
 function loadBag() {
   var userId = sessionUserID; // replace with actual user ID once implemented
   console.log("loadBag called with user id " + userId);
-  fetch(`http://localhost:3000/get-discs?userId=${userId}`, {
+  fetch(`https://build-your-bag.vercel.app/get-discs?userId=${userId}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
     },
@@ -205,11 +215,14 @@ function loadBag() {
 
 function loadAverageSpeed() {
   var userId = sessionUserID;
-  fetch(`http://localhost:3000/get-average-speed?userId=${userId}`, {
-    headers: {
-      Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
-    },
-  })
+  fetch(
+    `https://build-your-bag.vercel.app/get-average-speed?userId=${userId}`,
+    {
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
+      },
+    }
+  )
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.statusText);
@@ -283,7 +296,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Check if user is logged in
   const token = localStorage.getItem("accessToken");
   if (token) {
-    fetch("http://localhost:3000/userinfo", {
+    fetch("https://build-your-bag.vercel.app/userinfo", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -312,7 +325,7 @@ bag.addEventListener("click", function (e) {
   if (e.target.classList.contains("remove-disc")) {
     var discName = e.target.parentNode.querySelector("span").textContent;
     var userId = sessionUserID; // Replace with actual user ID from session or token once implemented
-    fetch(`http://localhost:3000/remove-disc`, {
+    fetch(`https://build-your-bag.vercel.app/remove-disc`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check if user is logged in
   const token = localStorage.getItem("accessToken");
   if (token) {
-    fetch("http://localhost:3000/userinfo", {
+    fetch("https://build-your-bag.vercel.app/userinfo", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -125,7 +125,7 @@ function createUserAccount() {
     creation_date: date, // Add creation date value here if applicable
   };
 
-  fetch("http://localhost:3000/createAccount", {
+  fetch("https://build-your-bag.vercel.app/createAccount", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -177,7 +177,7 @@ function login() {
     password: password,
   };
 
-  fetch("http://localhost:3000/login", {
+  fetch("https://build-your-bag.vercel.app/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
