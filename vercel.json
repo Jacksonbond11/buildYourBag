@@ -1,6 +1,7 @@
 {
   "version": 2,
   "builds": [
+    { "src": "api/index.js", "use": "@vercel/node" },
     { "src": "api/add-disc.js", "use": "@vercel/node" },
     { "src": "api/createAccount.js", "use": "@vercel/node" },
     { "src": "api/discdata.js", "use": "@vercel/node" },
@@ -10,5 +11,11 @@
     { "src": "api/login.js", "use": "@vercel/node" },
     { "src": "api/remove-disc.js", "use": "@vercel/node" },
     { "src": "api/search.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
   ]
 }
