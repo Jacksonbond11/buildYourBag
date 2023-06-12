@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //Functions
 startBuilding.onclick = function () {
   console.log("clicked");
-  window.location.href = "http://127.0.0.1:5500/pages/bag.html";
+  window.location.href = "http://127.0.0.1:5500/bag.html";
 };
 
 function createUserAccount() {
