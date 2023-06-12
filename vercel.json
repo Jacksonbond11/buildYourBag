@@ -1,4 +1,14 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/**/*.js", "use": "@vercel/node" }]
+  "builds": [
+    { "src": "api/add-disc.js", "use": "@vercel/node" },
+    { "src": "api/createAccount.js", "use": "@vercel/node" },
+    { "src": "api/discdata.js", "use": "@vercel/node" },
+    { "src": "api/get-average-speed.js", "use": "@vercel/node" },
+    { "src": "api/get-category-count.js", "use": "@vercel/node" },
+    { "src": "api/get-discs.js", "use": "@vercel/node" },
+    { "src": "api/login.js", "use": "@vercel/node" },
+    { "src": "api/remove-disc.js", "use": "@vercel/node" },
+    { "src": "api/search.js", "use": "@vercel/node" }
+  ]
 }
