@@ -55,7 +55,6 @@ window.onclick = function (event) {
 };
 
 loginSubmitBtn.onclick = function () {
-  console.log("loginSubmitBtn clicked");
   login();
 };
 
@@ -69,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Check if user is logged in
   const token = localStorage.getItem("accessToken");
   if (token) {
-    fetch("https://build-your-bag.vercel.app/userinfo", {
+    fetch("https://good-clouds-move.loca.lt/userinfo", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -78,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     })
       .then(function (response) {
         if (response.ok) {
-          console.log("Retrieved user info successfully");
           return response.json();
         } else {
           console.log("Error retrieving user info:", response.status);
@@ -86,7 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
       .then(function (data) {
-        console.log(data);
         username = "≡  " + data.username;
 
         // Update login and signup buttons
@@ -125,7 +122,7 @@ function createUserAccount() {
     creation_date: date, // Add creation date value here if applicable
   };
 
-  fetch("https://build-your-bag.vercel.app/createAccount", {
+  fetch("https://good-clouds-move.loca.lt/createAccount", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -177,7 +174,7 @@ function login() {
     password: password,
   };
 
-  fetch("https://build-your-bag.vercel.app/login", {
+  fetch("https://good-clouds-move.loca.lt/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

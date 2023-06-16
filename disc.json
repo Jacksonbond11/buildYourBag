@@ -1,0 +1,2949 @@
+{
+"SELECT (brand || '-' || name) FROM discs": [
+	{
+		"?column?" : "Discmania-DD1"
+	},
+	{
+		"?column?" : "Prodigy-M1"
+	},
+	{
+		"?column?" : "Latitude 64-Mercy"
+	},
+	{
+		"?column?" : "Latitude 64-Ballista Pro"
+	},
+	{
+		"?column?" : "EV-7-Mobius"
+	},
+	{
+		"?column?" : "Viking-Thor"
+	},
+	{
+		"?column?" : "Discmania-PD2"
+	},
+	{
+		"?column?" : "Vibram-Crag"
+	},
+	{
+		"?column?" : "Latitude 64-Scythe"
+	},
+	{
+		"?column?" : "Lightning-#1 Helix"
+	},
+	{
+		"?column?" : "Axiom Discs-Hex"
+	},
+	{
+		"?column?" : "Discmania-Paradigm"
+	},
+	{
+		"?column?" : "Axiom Discs-Tantrum"
+	},
+	{
+		"?column?" : "Discraft-Nuke SS"
+	},
+	{
+		"?column?" : "Latitude 64-Trust"
+	},
+	{
+		"?column?" : "Infinite Discs-Alpaca"
+	},
+	{
+		"?column?" : "Other-Marvel"
+	},
+	{
+		"?column?" : "Westside Discs-Maiden"
+	},
+	{
+		"?column?" : "Lone Star Discs-Middy"
+	},
+	{
+		"?column?" : "Innova-Cheetah"
+	},
+	{
+		"?column?" : "Mint Discs-Lobster"
+	},
+	{
+		"?column?" : "Infinite Discs-Myth"
+	},
+	{
+		"?column?" : "Millennium-Scorpius"
+	},
+	{
+		"?column?" : "MVP-Spin"
+	},
+	{
+		"?column?" : "Vibram-Ridge"
+	},
+	{
+		"?column?" : "Innova-Thunderbird"
+	},
+	{
+		"?column?" : "Innova-FL"
+	},
+	{
+		"?column?" : "Prodiscus-Fasti"
+	},
+	{
+		"?column?" : "Innova-Wombat3"
+	},
+	{
+		"?column?" : "Yikun-Crossbow"
+	},
+	{
+		"?column?" : "Innova-TL3"
+	},
+	{
+		"?column?" : "Innova-Fairway Disc"
+	},
+	{
+		"?column?" : "DGA-Torrent"
+	},
+	{
+		"?column?" : "Latitude 64-Glory"
+	},
+	{
+		"?column?" : "Crosslap-Credo"
+	},
+	{
+		"?column?" : "Discraft-Tracker"
+	},
+	{
+		"?column?" : "Viking-Rune"
+	},
+	{
+		"?column?" : "Prodigy-FX-2"
+	},
+	{
+		"?column?" : "Lightning-#1 Hyzer"
+	},
+	{
+		"?column?" : "MVP-Glitch"
+	},
+	{
+		"?column?" : "Innova-Caiman"
+	},
+	{
+		"?column?" : "Clash Discs-Peach"
+	},
+	{
+		"?column?" : "Discmania-CD2"
+	},
+	{
+		"?column?" : "Latitude 64-Core"
+	},
+	{
+		"?column?" : "Prodiscus-Respecti"
+	},
+	{
+		"?column?" : "Mint Discs-Diamondback"
+	},
+	{
+		"?column?" : "Clash Discs-Salt"
+	},
+	{
+		"?column?" : "Lone Star Discs-Guadalupe"
+	},
+	{
+		"?column?" : "Dynamic Discs-Suspect"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Coalesce"
+	},
+	{
+		"?column?" : "Innova-Krait"
+	},
+	{
+		"?column?" : "Innova-Starfire"
+	},
+	{
+		"?column?" : "Yikun-Wings"
+	},
+	{
+		"?column?" : "Discraft-Sol"
+	},
+	{
+		"?column?" : "Prodigy-A2"
+	},
+	{
+		"?column?" : "Prodigy-H5"
+	},
+	{
+		"?column?" : "Vibram-Arch"
+	},
+	{
+		"?column?" : "Innova-Teedevil"
+	},
+	{
+		"?column?" : "Prodiscus-Sparta"
+	},
+	{
+		"?column?" : "Discmania-Instinct"
+	},
+	{
+		"?column?" : "Latitude 64-Savior"
+	},
+	{
+		"?column?" : "Latitude 64-Missilen"
+	},
+	{
+		"?column?" : "Clash Discs-Soda"
+	},
+	{
+		"?column?" : "Latitude 64-Cutlass"
+	},
+	{
+		"?column?" : "Innova-Hawkeye"
+	},
+	{
+		"?column?" : "Prodigy-X4"
+	},
+	{
+		"?column?" : "Westside Discs-Giant"
+	},
+	{
+		"?column?" : "Løft Discs-Silicon"
+	},
+	{
+		"?column?" : "DGA-Sail"
+	},
+	{
+		"?column?" : "Discmania-Essence"
+	},
+	{
+		"?column?" : "RPM-Tara iti"
+	},
+	{
+		"?column?" : "Latitude 64-Anchor"
+	},
+	{
+		"?column?" : "Latitude 64-Honor"
+	},
+	{
+		"?column?" : "Prodigy-F Model OS"
+	},
+	{
+		"?column?" : "MVP-Tesla"
+	},
+	{
+		"?column?" : "Clash Discs-Pepper"
+	},
+	{
+		"?column?" : "Dynamic Discs-Warant"
+	},
+	{
+		"?column?" : "Innova-XCaliber"
+	},
+	{
+		"?column?" : "Westside Discs-Boatman"
+	},
+	{
+		"?column?" : "Gateway-Devil Hawk"
+	},
+	{
+		"?column?" : "Infinite Discs-Scarab"
+	},
+	{
+		"?column?" : "Daredevil Discs-Albatross"
+	},
+	{
+		"?column?" : "Prodiscus-Midari"
+	},
+	{
+		"?column?" : "Latitude 64-Sinus"
+	},
+	{
+		"?column?" : "Discraft-Meteor"
+	},
+	{
+		"?column?" : "Axiom Discs-Mayhem"
+	},
+	{
+		"?column?" : "Infinite Discs-Maya"
+	},
+	{
+		"?column?" : "Discmania-PDx"
+	},
+	{
+		"?column?" : "Millennium-Astra"
+	},
+	{
+		"?column?" : "Prodigy-Styder"
+	},
+	{
+		"?column?" : "Yikun-Xing"
+	},
+	{
+		"?column?" : "Prodigy-H2"
+	},
+	{
+		"?column?" : "Latitude 64-Fuji"
+	},
+	{
+		"?column?" : "Innova-Scorpion"
+	},
+	{
+		"?column?" : "Prodigy-Shadowfax"
+	},
+	{
+		"?column?" : "Axiom Discs-Alias"
+	},
+	{
+		"?column?" : "Prodigy-A5"
+	},
+	{
+		"?column?" : "Other-Strike"
+	},
+	{
+		"?column?" : "Discraft-Rattler"
+	},
+	{
+		"?column?" : "Storm-The Crater"
+	},
+	{
+		"?column?" : "Above Ground Level-Locust"
+	},
+	{
+		"?column?" : "Prodigy-Distortion"
+	},
+	{
+		"?column?" : "MVP-Wave"
+	},
+	{
+		"?column?" : "Lone Star Discs-Nimitz"
+	},
+	{
+		"?column?" : "Prodigy-D1"
+	},
+	{
+		"?column?" : "Dynamic Discs-Judge"
+	},
+	{
+		"?column?" : "Innova-VCobra"
+	},
+	{
+		"?column?" : "Discmania-DD3 (new)"
+	},
+	{
+		"?column?" : "Innova-Orc"
+	},
+	{
+		"?column?" : "Prodigy-D2"
+	},
+	{
+		"?column?" : "Innova-Wedge"
+	},
+	{
+		"?column?" : "AquaFlight-Osprey"
+	},
+	{
+		"?column?" : "Yikun-Rong"
+	},
+	{
+		"?column?" : "Latitude 64-Saint Pro"
+	},
+	{
+		"?column?" : "MVP-Matrix"
+	},
+	{
+		"?column?" : "Discraft-Zone OS"
+	},
+	{
+		"?column?" : "Above Ground Level-Manzanita"
+	},
+	{
+		"?column?" : "Discmania-P3"
+	},
+	{
+		"?column?" : "Legacy-Bandit"
+	},
+	{
+		"?column?" : "Discmania-TD"
+	},
+	{
+		"?column?" : "Discraft-Impact"
+	},
+	{
+		"?column?" : "Dynamic Discs-Guard"
+	},
+	{
+		"?column?" : "Discmania-Sun Bird"
+	},
+	{
+		"?column?" : "Latitude 64-Saint"
+	},
+	{
+		"?column?" : "Gateway-Rage"
+	},
+	{
+		"?column?" : "Axiom Discs-Defy"
+	},
+	{
+		"?column?" : "Axiom Discs-Fireball"
+	},
+	{
+		"?column?" : "Innova-Mako"
+	},
+	{
+		"?column?" : "Innova-VRoc"
+	},
+	{
+		"?column?" : "Millennium-JLS"
+	},
+	{
+		"?column?" : "Latitude 64-Havoc"
+	},
+	{
+		"?column?" : "Innova-Sidewinder"
+	},
+	{
+		"?column?" : "Discmania-DD"
+	},
+	{
+		"?column?" : "Other-Minotaur"
+	},
+	{
+		"?column?" : "Legacy-Aftermath"
+	},
+	{
+		"?column?" : "Prodigy-H4"
+	},
+	{
+		"?column?" : "Daredevil Discs-Mammoth"
+	},
+	{
+		"?column?" : "Lone Star Discs-Penny Putter (Victor)"
+	},
+	{
+		"?column?" : "Lone Star Discs-Benny"
+	},
+	{
+		"?column?" : "Prodigy-D2 Signature (Falcor)"
+	},
+	{
+		"?column?" : "AquaFlight-Swift"
+	},
+	{
+		"?column?" : "Latitude 64-Fuse"
+	},
+	{
+		"?column?" : "Daredevil Discs-Swift Fox"
+	},
+	{
+		"?column?" : "Latitude 64-Compass"
+	},
+	{
+		"?column?" : "Dynamic Discs-Fugitive (Supreme)"
+	},
+	{
+		"?column?" : "Above Ground Level-Douglas Fir"
+	},
+	{
+		"?column?" : "Lone Star Discs-Chupacabra"
+	},
+	{
+		"?column?" : "Vibram-UnLace"
+	},
+	{
+		"?column?" : "RPM-Tui"
+	},
+	{
+		"?column?" : "Infinite Discs-Dynasty"
+	},
+	{
+		"?column?" : "Hooligan Discs-Yeet"
+	},
+	{
+		"?column?" : "Dynamic Discs-Sergeant"
+	},
+	{
+		"?column?" : "Gateway-War Spear"
+	},
+	{
+		"?column?" : "Prodigy-X3"
+	},
+	{
+		"?column?" : "Prodigy-PA4"
+	},
+	{
+		"?column?" : "Discmania-P3X"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Pathfinder"
+	},
+	{
+		"?column?" : "Dynamic Discs-Evader"
+	},
+	{
+		"?column?" : "Dynamic Discs-Witness"
+	},
+	{
+		"?column?" : "Legacy-Cannon"
+	},
+	{
+		"?column?" : "Dynamic Discs-Breakout"
+	},
+	{
+		"?column?" : "Innova-Avatar"
+	},
+	{
+		"?column?" : "Above Ground Level-Sycamore"
+	},
+	{
+		"?column?" : "Gateway-Sabre"
+	},
+	{
+		"?column?" : "Kastaplast-Stal"
+	},
+	{
+		"?column?" : "Discmania-Enigma"
+	},
+	{
+		"?column?" : "Clash Discs-Fudge"
+	},
+	{
+		"?column?" : "Discmania-Genius"
+	},
+	{
+		"?column?" : "Prodigy-D Model OS"
+	},
+	{
+		"?column?" : "Infinite Discs-Aztec"
+	},
+	{
+		"?column?" : "DGA-Tsunami"
+	},
+	{
+		"?column?" : "Other-Pure OG"
+	},
+	{
+		"?column?" : "Legacy-Prowler"
+	},
+	{
+		"?column?" : "Other-Leviathan"
+	},
+	{
+		"?column?" : "Legacy-Rival"
+	},
+	{
+		"?column?" : "Yikun-Qi"
+	},
+	{
+		"?column?" : "RPM-Kahu XG"
+	},
+	{
+		"?column?" : "Innova-Mystere"
+	},
+	{
+		"?column?" : "Westside Discs-War Horse"
+	},
+	{
+		"?column?" : "Prodigy-FX-3"
+	},
+	{
+		"?column?" : "Daredevil Discs-Beaver"
+	},
+	{
+		"?column?" : "Discraft-Cyclone"
+	},
+	{
+		"?column?" : "Dynamic Discs-Felon"
+	},
+	{
+		"?column?" : "Discmania-TDx"
+	},
+	{
+		"?column?" : "Mint Discs-Freetail"
+	},
+	{
+		"?column?" : "Discmania-P1 (New)"
+	},
+	{
+		"?column?" : "Westside Discs-Underworld"
+	},
+	{
+		"?column?" : "Infinite Discs-Tomb"
+	},
+	{
+		"?column?" : "Latitude 64-Striker"
+	},
+	{
+		"?column?" : "Wild Discs-Addax Reborn"
+	},
+	{
+		"?column?" : "Yikun-Da'E"
+	},
+	{
+		"?column?" : "Innova-Shark3"
+	},
+	{
+		"?column?" : "Discmania-Splice"
+	},
+	{
+		"?column?" : "MVP-Nomad"
+	},
+	{
+		"?column?" : "Lone Star Discs-Dos X"
+	},
+	{
+		"?column?" : "Lone Star Discs-Curl"
+	},
+	{
+		"?column?" : "Viking-Axe"
+	},
+	{
+		"?column?" : "Yikun-Yi"
+	},
+	{
+		"?column?" : "MVP-Photon"
+	},
+	{
+		"?column?" : "Discraft-APX"
+	},
+	{
+		"?column?" : "Discraft-Flash"
+	},
+	{
+		"?column?" : "Latitude 64-Faith"
+	},
+	{
+		"?column?" : "Dynamic Discs-Proof"
+	},
+	{
+		"?column?" : "Prodigy-H1 V2"
+	},
+	{
+		"?column?" : "Millennium-Falcon"
+	},
+	{
+		"?column?" : "MVP-Servo"
+	},
+	{
+		"?column?" : "Latitude 64-Zion"
+	},
+	{
+		"?column?" : "Gateway-Ninja"
+	},
+	{
+		"?column?" : "Latitude 64-Sarek"
+	},
+	{
+		"?column?" : "Gateway-Samurai"
+	},
+	{
+		"?column?" : "Other-Era"
+	},
+	{
+		"?column?" : "RPM-Huia"
+	},
+	{
+		"?column?" : "DGA-Breaker"
+	},
+	{
+		"?column?" : "Discmania-Maestro"
+	},
+	{
+		"?column?" : "Latitude 64-Stiletto"
+	},
+	{
+		"?column?" : "Streamline-Ascend"
+	},
+	{
+		"?column?" : "Innova-Hydra"
+	},
+	{
+		"?column?" : "Kastaplast-Kaxe Z"
+	},
+	{
+		"?column?" : "MVP-Particle"
+	},
+	{
+		"?column?" : "Prodiscus-Titan"
+	},
+	{
+		"?column?" : "Gateway-Slayer"
+	},
+	{
+		"?column?" : "Discraft-Zeus"
+	},
+	{
+		"?column?" : "Mint Discs-Mustang"
+	},
+	{
+		"?column?" : "Kastaplast-Grym"
+	},
+	{
+		"?column?" : "Discraft-Challenger OS"
+	},
+	{
+		"?column?" : "Discmania-FD3"
+	},
+	{
+		"?column?" : "Innova-Polecat"
+	},
+	{
+		"?column?" : "Westside Discs-Shield"
+	},
+	{
+		"?column?" : "Clash Discs-Ginger"
+	},
+	{
+		"?column?" : "Discraft-Hornet"
+	},
+	{
+		"?column?" : "Daredevil Discs-Yeti"
+	},
+	{
+		"?column?" : "Gateway-Mystic"
+	},
+	{
+		"?column?" : "Discraft-Malta"
+	},
+	{
+		"?column?" : "Discraft-Putt'r"
+	},
+	{
+		"?column?" : "Daredevil Discs-Walrus"
+	},
+	{
+		"?column?" : "Lone Star Discs-Lone Wolf"
+	},
+	{
+		"?column?" : "Innova-Roc3"
+	},
+	{
+		"?column?" : "Discraft-Buzzz SS"
+	},
+	{
+		"?column?" : "Other-Scale"
+	},
+	{
+		"?column?" : "Westside Discs-Tursas"
+	},
+	{
+		"?column?" : "DGA-Banzai"
+	},
+	{
+		"?column?" : "Discraft-Undertaker"
+	},
+	{
+		"?column?" : "Dynamic Discs-Thief"
+	},
+	{
+		"?column?" : "Latitude 64-Caltrop"
+	},
+	{
+		"?column?" : "Discmania-FD (New)"
+	},
+	{
+		"?column?" : "MVP-Ohm"
+	},
+	{
+		"?column?" : "Yikun-Claws"
+	},
+	{
+		"?column?" : "Prodigy-F5"
+	},
+	{
+		"?column?" : "Clash Discs-Cookie"
+	},
+	{
+		"?column?" : "Discraft-Heat"
+	},
+	{
+		"?column?" : "Gateway-Shaman"
+	},
+	{
+		"?column?" : "Yikun-Jun"
+	},
+	{
+		"?column?" : "Millennium-Aries"
+	},
+	{
+		"?column?" : "Daredevil Discs-Buffalo"
+	},
+	{
+		"?column?" : "Discraft-Archer"
+	},
+	{
+		"?column?" : "Storm-Abyss"
+	},
+	{
+		"?column?" : "Clash Discs-Honey"
+	},
+	{
+		"?column?" : "Crosslap-Vigil"
+	},
+	{
+		"?column?" : "Latitude 64-Fury"
+	},
+	{
+		"?column?" : "Westside Discs-Destiny"
+	},
+	{
+		"?column?" : "Innova-Toro"
+	},
+	{
+		"?column?" : "Discmania-Origin"
+	},
+	{
+		"?column?" : "Latitude 64-Gauntlet"
+	},
+	{
+		"?column?" : "Vibram-Ibex"
+	},
+	{
+		"?column?" : "Prodigy-PA2"
+	},
+	{
+		"?column?" : "Millennium-Veteran"
+	},
+	{
+		"?column?" : "Westside Discs-Swan 1 Reborn"
+	},
+	{
+		"?column?" : "Lone Star Discs-BB6"
+	},
+	{
+		"?column?" : "Latitude 64-Pearl"
+	},
+	{
+		"?column?" : "Disctroyer-Nightjar"
+	},
+	{
+		"?column?" : "Innova-Viking"
+	},
+	{
+		"?column?" : "Gateway-Diablo DT"
+	},
+	{
+		"?column?" : "Innova-Savant"
+	},
+	{
+		"?column?" : "Millennium-Omega"
+	},
+	{
+		"?column?" : "Discmania-Magician"
+	},
+	{
+		"?column?" : "Gateway-Assassin"
+	},
+	{
+		"?column?" : "Prodigy-A1"
+	},
+	{
+		"?column?" : "Innova-Bullfrog"
+	},
+	{
+		"?column?" : "Discraft-Force"
+	},
+	{
+		"?column?" : "Discraft-XS"
+	},
+	{
+		"?column?" : "Above Ground Level-Cedar"
+	},
+	{
+		"?column?" : "Wild Discs-Angler"
+	},
+	{
+		"?column?" : "Discmania-Mutant"
+	},
+	{
+		"?column?" : "Latitude 64-Gladiator"
+	},
+	{
+		"?column?" : "Latitude 64-Sapphire"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Mantra"
+	},
+	{
+		"?column?" : "Discmania-Tilt"
+	},
+	{
+		"?column?" : "Kastaplast-Falk"
+	},
+	{
+		"?column?" : "Viking-Warrior (Viking)"
+	},
+	{
+		"?column?" : "MVP-Teleport"
+	},
+	{
+		"?column?" : "Prodigy-D2 Max"
+	},
+	{
+		"?column?" : "Viking-Knife"
+	},
+	{
+		"?column?" : "Discraft-Banger GT"
+	},
+	{
+		"?column?" : "Axiom Discs-Proxy"
+	},
+	{
+		"?column?" : "DGA-Titanic"
+	},
+	{
+		"?column?" : "Millennium-Astra-X"
+	},
+	{
+		"?column?" : "DGA-Vortex"
+	},
+	{
+		"?column?" : "Streamline-Drift"
+	},
+	{
+		"?column?" : "Millennium-Aquarius"
+	},
+	{
+		"?column?" : "Axiom Discs-Virus"
+	},
+	{
+		"?column?" : "Dynamic Discs-EMac Judge"
+	},
+	{
+		"?column?" : "Crosslap-Lucky"
+	},
+	{
+		"?column?" : "Westside Discs-Harp"
+	},
+	{
+		"?column?" : "RPM-Kotare"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Praxis"
+	},
+	{
+		"?column?" : "Axiom Discs-Envy"
+	},
+	{
+		"?column?" : "Mint Discs-Phoenix"
+	},
+	{
+		"?column?" : "Discmania-DD3"
+	},
+	{
+		"?column?" : "Latitude 64-Mace"
+	},
+	{
+		"?column?" : "Mint Discs-Bobcat"
+	},
+	{
+		"?column?" : "Westside Discs-Sword"
+	},
+	{
+		"?column?" : "Latitude 64-Pioneer"
+	},
+	{
+		"?column?" : "Innova-Viper"
+	},
+	{
+		"?column?" : "Dynamic Discs-Trespass"
+	},
+	{
+		"?column?" : "Innova-Ape"
+	},
+	{
+		"?column?" : "Innova-Archangel"
+	},
+	{
+		"?column?" : "Disctroyer-FD-8 Stork"
+	},
+	{
+		"?column?" : "Innova-Katana"
+	},
+	{
+		"?column?" : "Prodigy-D6"
+	},
+	{
+		"?column?" : "Legacy-Clutch"
+	},
+	{
+		"?column?" : "MVP-Phase"
+	},
+	{
+		"?column?" : "Infinite Discs-Exodus"
+	},
+	{
+		"?column?" : "Innova-Cro"
+	},
+	{
+		"?column?" : "RPM-Piwakawaka"
+	},
+	{
+		"?column?" : "MVP-Ion"
+	},
+	{
+		"?column?" : "Gateway-Spirit"
+	},
+	{
+		"?column?" : "Westside Discs-Gatekeeper"
+	},
+	{
+		"?column?" : "Innova-JK Aviar"
+	},
+	{
+		"?column?" : "Prodigy-X1"
+	},
+	{
+		"?column?" : "Prodigy-M3"
+	},
+	{
+		"?column?" : "Infinite Discs-Anubis"
+	},
+	{
+		"?column?" : "Innova-Yeti Aviar"
+	},
+	{
+		"?column?" : "Above Ground Level-Spruce"
+	},
+	{
+		"?column?" : "Dynamic Discs-Sockibomb Felon"
+	},
+	{
+		"?column?" : "Vibram-O-Lace"
+	},
+	{
+		"?column?" : "Innova-Invictus"
+	},
+	{
+		"?column?" : "Innova-Charger"
+	},
+	{
+		"?column?" : "Yikun-Fu"
+	},
+	{
+		"?column?" : "Lone Star Discs-Bayonet"
+	},
+	{
+		"?column?" : "Millennium-Vela"
+	},
+	{
+		"?column?" : "Innova-Wraith"
+	},
+	{
+		"?column?" : "Innova-Ram"
+	},
+	{
+		"?column?" : "Vibram-Vamp"
+	},
+	{
+		"?column?" : "Daredevil Discs-Big Horn"
+	},
+	{
+		"?column?" : "Discraft-Nebula"
+	},
+	{
+		"?column?" : "Discraft-Xpress"
+	},
+	{
+		"?column?" : "Gateway-Warlock"
+	},
+	{
+		"?column?" : "DGA-Blowfly"
+	},
+	{
+		"?column?" : "DGA-Avalanche"
+	},
+	{
+		"?column?" : "Discmania-Fox Spirit"
+	},
+	{
+		"?column?" : "MVP-Zenith"
+	},
+	{
+		"?column?" : "Crosslap-Shadowplay"
+	},
+	{
+		"?column?" : "Innova-Coyote"
+	},
+	{
+		"?column?" : "Innova-Dominator"
+	},
+	{
+		"?column?" : "Lone Star Discs-Bowie"
+	},
+	{
+		"?column?" : "Innova-Rhyno"
+	},
+	{
+		"?column?" : "Wild Discs-Hummingbird"
+	},
+	{
+		"?column?" : "Discraft-Drone"
+	},
+	{
+		"?column?" : "Latitude 64-Macana"
+	},
+	{
+		"?column?" : "Viking-Cosmos"
+	},
+	{
+		"?column?" : "Disctroyer-DD-13 Starling"
+	},
+	{
+		"?column?" : "Daredevil Discs-Wolverine"
+	},
+	{
+		"?column?" : "Innova-Mirage"
+	},
+	{
+		"?column?" : "Lightning-#1 Flyer"
+	},
+	{
+		"?column?" : "Dynamic Discs-Patrol"
+	},
+	{
+		"?column?" : "Yikun-Jiao"
+	},
+	{
+		"?column?" : "Innova-Juggernaut"
+	},
+	{
+		"?column?" : "Legacy-Clozer"
+	},
+	{
+		"?column?" : "Other-Gila"
+	},
+	{
+		"?column?" : "Axiom Discs-Trance"
+	},
+	{
+		"?column?" : "Clash Discs-Mint"
+	},
+	{
+		"?column?" : "Latitude 64-Dagger"
+	},
+	{
+		"?column?" : "Disc Golf UK-The Count"
+	},
+	{
+		"?column?" : "Legacy-Valor"
+	},
+	{
+		"?column?" : "Axiom Discs-Wrath"
+	},
+	{
+		"?column?" : "MVP-Relativity"
+	},
+	{
+		"?column?" : "Dynamic Discs-Freedom"
+	},
+	{
+		"?column?" : "Løft Discs-Xenon"
+	},
+	{
+		"?column?" : "MVP-Amp"
+	},
+	{
+		"?column?" : "Discraft-Magnet"
+	},
+	{
+		"?column?" : "Lightning-#1 Driver"
+	},
+	{
+		"?column?" : "Prodigy-H7"
+	},
+	{
+		"?column?" : "Discmania-P1"
+	},
+	{
+		"?column?" : "AquaFlight-Peace Frog"
+	},
+	{
+		"?column?" : "Legacy-Recluse"
+	},
+	{
+		"?column?" : "Discraft-Athena"
+	},
+	{
+		"?column?" : "Prodigy-F3"
+	},
+	{
+		"?column?" : "Yikun-Kui"
+	},
+	{
+		"?column?" : "Discraft-Predator"
+	},
+	{
+		"?column?" : "Storm-Radar"
+	},
+	{
+		"?column?" : "Vibram-Valley"
+	},
+	{
+		"?column?" : "Discraft-Nuke"
+	},
+	{
+		"?column?" : "Innova-Manta"
+	},
+	{
+		"?column?" : "Vibram-VP"
+	},
+	{
+		"?column?" : "Innova-Teebird3"
+	},
+	{
+		"?column?" : "Elevation Disc Golf-Arowana"
+	},
+	{
+		"?column?" : "Prodigy-M Model OS"
+	},
+	{
+		"?column?" : "Vibram-Launch"
+	},
+	{
+		"?column?" : "Dynamic Discs-Fugitive"
+	},
+	{
+		"?column?" : "Prodigy-D3"
+	},
+	{
+		"?column?" : "Yikun-Tomahawk"
+	},
+	{
+		"?column?" : "Discmania-MD3 (Retooled)"
+	},
+	{
+		"?column?" : "Legacy-Rampage"
+	},
+	{
+		"?column?" : "Gateway-Diablo"
+	},
+	{
+		"?column?" : "Yikun-Long"
+	},
+	{
+		"?column?" : "Westside Discs-Seer"
+	},
+	{
+		"?column?" : "Westside Discs-Pine"
+	},
+	{
+		"?column?" : "Daredevil Discs-Polar Bear"
+	},
+	{
+		"?column?" : "Discmania-TD2"
+	},
+	{
+		"?column?" : "Yikun-Zheng"
+	},
+	{
+		"?column?" : "Discraft-Focus"
+	},
+	{
+		"?column?" : "Latitude 64-Ballista"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Votum"
+	},
+	{
+		"?column?" : "Yikun-Wei"
+	},
+	{
+		"?column?" : "Millennium-Omega4"
+	},
+	{
+		"?column?" : "Kastaplast-Gote"
+	},
+	{
+		"?column?" : "Kastaplast-Stig"
+	},
+	{
+		"?column?" : "Prodigy-A4"
+	},
+	{
+		"?column?" : "Prodigy-A3"
+	},
+	{
+		"?column?" : "Axiom Discs-Pyro"
+	},
+	{
+		"?column?" : "Axiom Discs-Rhythm"
+	},
+	{
+		"?column?" : "Crosslap-Openwater"
+	},
+	{
+		"?column?" : "Discraft-Challenger SS"
+	},
+	{
+		"?column?" : "Innova-Power Disc2"
+	},
+	{
+		"?column?" : "Westside Discs-Queen"
+	},
+	{
+		"?column?" : "RPM-Kea"
+	},
+	{
+		"?column?" : "Discmania-Method"
+	},
+	{
+		"?column?" : "Prodigy-F2"
+	},
+	{
+		"?column?" : "Discraft-Mantis"
+	},
+	{
+		"?column?" : "Dynamic Discs-Maverick"
+	},
+	{
+		"?column?" : "Legacy-Fighter"
+	},
+	{
+		"?column?" : "Innova-Shryke"
+	},
+	{
+		"?column?" : "MVP-Impulse"
+	},
+	{
+		"?column?" : "Axiom Discs-Delirium"
+	},
+	{
+		"?column?" : "DGA-Riptide"
+	},
+	{
+		"?column?" : "MVP-Tangent"
+	},
+	{
+		"?column?" : "Daredevil Discs-Woodchuck"
+	},
+	{
+		"?column?" : "MVP-Volt"
+	},
+	{
+		"?column?" : "Axiom Discs-Tenacity"
+	},
+	{
+		"?column?" : "Infinite Discs-Pharaoh"
+	},
+	{
+		"?column?" : "Clash Discs-Berry"
+	},
+	{
+		"?column?" : "Dynamic Discs-Sheriff"
+	},
+	{
+		"?column?" : "Prodigy-Reverb"
+	},
+	{
+		"?column?" : "RPM-Kahu"
+	},
+	{
+		"?column?" : "Prodigy-H1"
+	},
+	{
+		"?column?" : "Prodiscus-Flipperi"
+	},
+	{
+		"?column?" : "Latitude 64-Gobi"
+	},
+	{
+		"?column?" : "Westside Discs-Stag"
+	},
+	{
+		"?column?" : "Prodigy-M Model US"
+	},
+	{
+		"?column?" : "Infinite Discs-Ra"
+	},
+	{
+		"?column?" : "Innova-Wombat"
+	},
+	{
+		"?column?" : "Lone Star Discs-Armadillo"
+	},
+	{
+		"?column?" : "Discraft-Avenger"
+	},
+	{
+		"?column?" : "Above Ground Level-Baobab"
+	},
+	{
+		"?column?" : "Above Ground Level-Ponderosa"
+	},
+	{
+		"?column?" : "RPM-Ruru"
+	},
+	{
+		"?column?" : "Axiom Discs-Clash"
+	},
+	{
+		"?column?" : "MVP-Vector"
+	},
+	{
+		"?column?" : "Viking-Ragnarok"
+	},
+	{
+		"?column?" : "Gateway-Warrior (Gateway)"
+	},
+	{
+		"?column?" : "Viking-Barbarian"
+	},
+	{
+		"?column?" : "Discmania-GM"
+	},
+	{
+		"?column?" : "Innova-Skeeter"
+	},
+	{
+		"?column?" : "Discmania-Rockstar"
+	},
+	{
+		"?column?" : "Latitude 64-Bolt"
+	},
+	{
+		"?column?" : "Innova-Dragon"
+	},
+	{
+		"?column?" : "Innova-Archon"
+	},
+	{
+		"?column?" : "DGA-Rogue"
+	},
+	{
+		"?column?" : "Innova-Mid-Disc3"
+	},
+	{
+		"?column?" : "Innova-Whippet"
+	},
+	{
+		"?column?" : "Westside Discs-Warship"
+	},
+	{
+		"?column?" : "Gateway-Blade"
+	},
+	{
+		"?column?" : "Discraft-Zombee"
+	},
+	{
+		"?column?" : "Innova-Whale"
+	},
+	{
+		"?column?" : "Innova-Daedalus"
+	},
+	{
+		"?column?" : "Discraft-Scorch"
+	},
+	{
+		"?column?" : "Discmania-MD3"
+	},
+	{
+		"?column?" : "Prodigy-H3 V2"
+	},
+	{
+		"?column?" : "DGA-Hypercane"
+	},
+	{
+		"?column?" : "Discmania-CD3"
+	},
+	{
+		"?column?" : "Infinite Discs-Slab"
+	},
+	{
+		"?column?" : "Dynamic Discs-Captain"
+	},
+	{
+		"?column?" : "Discraft-Captain's Raptor"
+	},
+	{
+		"?column?" : "Innova-AviarX3"
+	},
+	{
+		"?column?" : "Innova-Leopard"
+	},
+	{
+		"?column?" : "Prodigy-M5"
+	},
+	{
+		"?column?" : "MVP-Orbital"
+	},
+	{
+		"?column?" : "RPM-Takapu"
+	},
+	{
+		"?column?" : "Legacy-Patriot"
+	},
+	{
+		"?column?" : "Lone Star Discs-Mockingbird"
+	},
+	{
+		"?column?" : "Other-Tiyanak"
+	},
+	{
+		"?column?" : "Discraft-Crush"
+	},
+	{
+		"?column?" : "DGA-Steady"
+	},
+	{
+		"?column?" : "Latitude 64-Jade"
+	},
+	{
+		"?column?" : "DGA-Gumbputt"
+	},
+	{
+		"?column?" : "Other-Kraken"
+	},
+	{
+		"?column?" : "Discraft-Surge"
+	},
+	{
+		"?column?" : "Westside Discs-Hatchet"
+	},
+	{
+		"?column?" : "Clash Discs-Butter"
+	},
+	{
+		"?column?" : "Westside Discs-Sorcerer"
+	},
+	{
+		"?column?" : "Discraft-Hawk"
+	},
+	{
+		"?column?" : "Disctroyer-MR-5 Skylark"
+	},
+	{
+		"?column?" : "Innova-TeeRex"
+	},
+	{
+		"?column?" : "Latitude 64-Flow"
+	},
+	{
+		"?column?" : "Innova-Roadrunner"
+	},
+	{
+		"?column?" : "Latitude 64-Raketen"
+	},
+	{
+		"?column?" : "Millennium-Moab"
+	},
+	{
+		"?column?" : "Dynamic Discs-Culprit"
+	},
+	{
+		"?column?" : "Innova-Lion"
+	},
+	{
+		"?column?" : "Westside Discs-Bear"
+	},
+	{
+		"?column?" : "Discmania-CD1"
+	},
+	{
+		"?column?" : "Discmania-Logic"
+	},
+	{
+		"?column?" : "Dynamic Discs-Truth, EMAC"
+	},
+	{
+		"?column?" : "Innova-Colossus"
+	},
+	{
+		"?column?" : "Yikun-Hu"
+	},
+	{
+		"?column?" : "Discraft-Hades"
+	},
+	{
+		"?column?" : "Westside Discs-Fortress"
+	},
+	{
+		"?column?" : "Discmania-Spring Ox"
+	},
+	{
+		"?column?" : "RPM-Taniwha"
+	},
+	{
+		"?column?" : "Innova-Rat"
+	},
+	{
+		"?column?" : "RPM-Pekapeka"
+	},
+	{
+		"?column?" : "Yikun-Lu"
+	},
+	{
+		"?column?" : "Latitude 64-Rive"
+	},
+	{
+		"?column?" : "Dynamic Discs-Verdict"
+	},
+	{
+		"?column?" : "Prodigy-M4"
+	},
+	{
+		"?column?" : "Discmania-MD1"
+	},
+	{
+		"?column?" : "Prodigy-D5"
+	},
+	{
+		"?column?" : "Vibram-Lace"
+	},
+	{
+		"?column?" : "Discmania-MD5"
+	},
+	{
+		"?column?" : "Millennium-Sabot"
+	},
+	{
+		"?column?" : "Discraft-Challenger"
+	},
+	{
+		"?column?" : "Prodigy-D4 Max"
+	},
+	{
+		"?column?" : "Innova-Max"
+	},
+	{
+		"?column?" : "Discmania-Sea Serpent"
+	},
+	{
+		"?column?" : "Innova-Firebird"
+	},
+	{
+		"?column?" : "Discraft-Fierce"
+	},
+	{
+		"?column?" : "Discraft-Nuke OS"
+	},
+	{
+		"?column?" : "Gateway-Blaze"
+	},
+	{
+		"?column?" : "Finish Line-Supra"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Mana"
+	},
+	{
+		"?column?" : "Infinite Discs-Czar"
+	},
+	{
+		"?column?" : "Latitude 64-Keystone"
+	},
+	{
+		"?column?" : "Lone Star Discs-Tumbleweed"
+	},
+	{
+		"?column?" : "Infinite Discs-Cohort"
+	},
+	{
+		"?column?" : "Discmania-Majesty"
+	},
+	{
+		"?column?" : "DGA-Reef"
+	},
+	{
+		"?column?" : "Løft Discs-Bohrium"
+	},
+	{
+		"?column?" : "MVP-Energy"
+	},
+	{
+		"?column?" : "Legacy-Ghost"
+	},
+	{
+		"?column?" : "Innova-Colt"
+	},
+	{
+		"?column?" : "Løft Discs-Hydrogen"
+	},
+	{
+		"?column?" : "Wild Discs-Orca"
+	},
+	{
+		"?column?" : "Discraft-Stratus"
+	},
+	{
+		"?column?" : "Prodigy-PA5"
+	},
+	{
+		"?column?" : "Gateway-Chief OS"
+	},
+	{
+		"?column?" : "MVP-Switch"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Animus"
+	},
+	{
+		"?column?" : "Yikun-View"
+	},
+	{
+		"?column?" : "Viking-Fenrir"
+	},
+	{
+		"?column?" : "Latitude 64-Spike"
+	},
+	{
+		"?column?" : "Innova-Groove"
+	},
+	{
+		"?column?" : "RPM-Kiwi"
+	},
+	{
+		"?column?" : "Innova-KC Aviar"
+	},
+	{
+		"?column?" : "Prodigy-H4 V2"
+	},
+	{
+		"?column?" : "MVP-Nitro"
+	},
+	{
+		"?column?" : "Lone Star Discs-Jack Rabbit"
+	},
+	{
+		"?column?" : "Mint Discs-Longhorn"
+	},
+	{
+		"?column?" : "Discmania-FD2"
+	},
+	{
+		"?column?" : "Above Ground Level-Beech"
+	},
+	{
+		"?column?" : "Vibram-Solace"
+	},
+	{
+		"?column?" : "Discmania-Tactic"
+	},
+	{
+		"?column?" : "Discraft-Crank"
+	},
+	{
+		"?column?" : "Clash Discs-Mango"
+	},
+	{
+		"?column?" : "Dynamic Discs-Justice"
+	},
+	{
+		"?column?" : "Infinite Discs-Scepter"
+	},
+	{
+		"?column?" : "Daredevil Discs-Merlin"
+	},
+	{
+		"?column?" : "Millennium-Sentinel"
+	},
+	{
+		"?column?" : "Infinite Discs-Emperor"
+	},
+	{
+		"?column?" : "Latitude 64-Musket"
+	},
+	{
+		"?column?" : "Streamline-Jet"
+	},
+	{
+		"?column?" : "Innova-Wahoo"
+	},
+	{
+		"?column?" : "Kastaplast-Lots"
+	},
+	{
+		"?column?" : "Infinite Discs-Roman"
+	},
+	{
+		"?column?" : "Discraft-Wildcat"
+	},
+	{
+		"?column?" : "Dynamic Discs-Getaway"
+	},
+	{
+		"?column?" : "Latitude 64-Falchion"
+	},
+	{
+		"?column?" : "MVP-Shock"
+	},
+	{
+		"?column?" : "MVP-Signal"
+	},
+	{
+		"?column?" : "Gateway-Spear"
+	},
+	{
+		"?column?" : "Disc Golf UK-The Duke"
+	},
+	{
+		"?column?" : "Discraft-Comet"
+	},
+	{
+		"?column?" : "Prodiscus-Stari"
+	},
+	{
+		"?column?" : "Yikun-Gou"
+	},
+	{
+		"?column?" : "Finish Line-Pace"
+	},
+	{
+		"?column?" : "Discraft-Surge SS"
+	},
+	{
+		"?column?" : "Discraft-Ringer GT"
+	},
+	{
+		"?column?" : "Elevation Disc Golf-Gecko"
+	},
+	{
+		"?column?" : "Other-Cypress"
+	},
+	{
+		"?column?" : "Other-Narwhal"
+	},
+	{
+		"?column?" : "Dynamic Discs-Enforcer"
+	},
+	{
+		"?column?" : "Streamline-Pilot"
+	},
+	{
+		"?column?" : "Kastaplast-Svea"
+	},
+	{
+		"?column?" : "Kastaplast-Jarn"
+	},
+	{
+		"?column?" : "Yikun-Meteor Hammer"
+	},
+	{
+		"?column?" : "Discraft-Stalker"
+	},
+	{
+		"?column?" : "DGA-Pipeline"
+	},
+	{
+		"?column?" : "Discmania-FD"
+	},
+	{
+		"?column?" : "Streamline-Stabilizer"
+	},
+	{
+		"?column?" : "Discraft-Punisher"
+	},
+	{
+		"?column?" : "Gateway-Voodoo"
+	},
+	{
+		"?column?" : "Yikun-Ling"
+	},
+	{
+		"?column?" : "Gateway-Houdini"
+	},
+	{
+		"?column?" : "Wild Discs-Great White"
+	},
+	{
+		"?column?" : "Other-Brontosaurus"
+	},
+	{
+		"?column?" : "Clash Discs-Spice"
+	},
+	{
+		"?column?" : "Dynamic Discs-Warden"
+	},
+	{
+		"?column?" : "Other-I-One"
+	},
+	{
+		"?column?" : "Above Ground Level-Madrone"
+	},
+	{
+		"?column?" : "Innova-Roc"
+	},
+	{
+		"?column?" : "Gateway-Speed Demon"
+	},
+	{
+		"?column?" : "Other-Zeal"
+	},
+	{
+		"?column?" : "Prodigy-FX-4"
+	},
+	{
+		"?column?" : "Latitude 64-River Pro"
+	},
+	{
+		"?column?" : "Lone Star Discs-Walker"
+	},
+	{
+		"?column?" : "Latitude 64-Pure"
+	},
+	{
+		"?column?" : "Mint Discs-Jackalope"
+	},
+	{
+		"?column?" : "Innova-Gazelle"
+	},
+	{
+		"?column?" : "Discmania-PD"
+	},
+	{
+		"?column?" : "Dynamic Discs-Renegade"
+	},
+	{
+		"?column?" : "Yikun-Kang"
+	},
+	{
+		"?column?" : "Innova-Aviar Classic"
+	},
+	{
+		"?column?" : "Innova-Mamba"
+	},
+	{
+		"?column?" : "Innova-Leopard3"
+	},
+	{
+		"?column?" : "MVP-Limit"
+	},
+	{
+		"?column?" : "Infinite Discs-Kon Tiki"
+	},
+	{
+		"?column?" : "Disc Golf UK-The Duchess"
+	},
+	{
+		"?column?" : "Discraft-Crank SS"
+	},
+	{
+		"?column?" : "Discmania-PD3"
+	},
+	{
+		"?column?" : "Lone Star Discs-Lariat"
+	},
+	{
+		"?column?" : "Daredevil Discs-Hellbender (Razorback)"
+	},
+	{
+		"?column?" : "Dynamic Discs-Defender"
+	},
+	{
+		"?column?" : "Yikun-Gui"
+	},
+	{
+		"?column?" : "Latitude 64-Diamond"
+	},
+	{
+		"?column?" : "Mint Discs-Profit"
+	},
+	{
+		"?column?" : "Daredevil Discs-Grizzly"
+	},
+	{
+		"?column?" : "Latitude 64-Explorer"
+	},
+	{
+		"?column?" : "Mint Discs-Goat (Eternal)"
+	},
+	{
+		"?column?" : "Discraft-Venom (Retooled)"
+	},
+	{
+		"?column?" : "Westside Discs-Swan 2"
+	},
+	{
+		"?column?" : "Other-White Widow"
+	},
+	{
+		"?column?" : "Discraft-Luna"
+	},
+	{
+		"?column?" : "Prodigy-MX-1"
+	},
+	{
+		"?column?" : "Kastaplast-Grym X"
+	},
+	{
+		"?column?" : "Innova-Vulcan"
+	},
+	{
+		"?column?" : "Yikun-Hammer"
+	},
+	{
+		"?column?" : "Daredevil Discs-Ogopogo"
+	},
+	{
+		"?column?" : "Westside Discs-World"
+	},
+	{
+		"?column?" : "Lightning-#1 Hookshot"
+	},
+	{
+		"?column?" : "Lone Star Discs-Bluebonnet"
+	},
+	{
+		"?column?" : "Innova-Wolf"
+	},
+	{
+		"?column?" : "AquaFlight-Dragonfly"
+	},
+	{
+		"?column?" : "Gateway-Illusion"
+	},
+	{
+		"?column?" : "Innova-Destroyer"
+	},
+	{
+		"?column?" : "Innova-Corvette"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Synapse"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Alter"
+	},
+	{
+		"?column?" : "Millennium-Orion LF"
+	},
+	{
+		"?column?" : "Innova-Shark"
+	},
+	{
+		"?column?" : "Lone Star Discs-Brazos"
+	},
+	{
+		"?column?" : "Lone Star Discs-Frio"
+	},
+	{
+		"?column?" : "Prodigy-P Model US"
+	},
+	{
+		"?column?" : "Prodigy-D Model S"
+	},
+	{
+		"?column?" : "Millennium-Polaris LF"
+	},
+	{
+		"?column?" : "Kastaplast-Reko X"
+	},
+	{
+		"?column?" : "Innova-Monarch"
+	},
+	{
+		"?column?" : "Daredevil Discs-Hellbender"
+	},
+	{
+		"?column?" : "Prodigy-X2"
+	},
+	{
+		"?column?" : "Other-KGB"
+	},
+	{
+		"?column?" : "Discmania-Sensei"
+	},
+	{
+		"?column?" : "Kastaplast-Berg"
+	},
+	{
+		"?column?" : "Gateway-Apex"
+	},
+	{
+		"?column?" : "Discraft-Raptor"
+	},
+	{
+		"?column?" : "MVP-Deflector"
+	},
+	{
+		"?column?" : "Axiom Discs-Thrill"
+	},
+	{
+		"?column?" : "Lone Star Discs-Tombstone"
+	},
+	{
+		"?column?" : "Dynamic Discs-Gavel"
+	},
+	{
+		"?column?" : "DGA-Rift"
+	},
+	{
+		"?column?" : "Innova-Xero"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Muse"
+	},
+	{
+		"?column?" : "Discmania-MD"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Omen"
+	},
+	{
+		"?column?" : "Clash Discs-Popcorn"
+	},
+	{
+		"?column?" : "Lone Star Discs-Warbird"
+	},
+	{
+		"?column?" : "Wild Discs-Tasmanian Devil V2"
+	},
+	{
+		"?column?" : "Discmania-MD4"
+	},
+	{
+		"?column?" : "Storm-The Eye"
+	},
+	{
+		"?column?" : "Discraft-Buzzz"
+	},
+	{
+		"?column?" : "EV-7-Penrose"
+	},
+	{
+		"?column?" : "Yikun-Bi"
+	},
+	{
+		"?column?" : "Prodiscus-Origo"
+	},
+	{
+		"?column?" : "MVP-Motion"
+	},
+	{
+		"?column?" : "Legacy-Rebel"
+	},
+	{
+		"?column?" : "Dynamic Discs-Escape"
+	},
+	{
+		"?column?" : "Millennium-Draco"
+	},
+	{
+		"?column?" : "Millennium-Polaris LS"
+	},
+	{
+		"?column?" : "Discraft-Venom"
+	},
+	{
+		"?column?" : "Discraft-Reaper"
+	},
+	{
+		"?column?" : "Discmania-DD2"
+	},
+	{
+		"?column?" : "Westside Discs-Crown"
+	},
+	{
+		"?column?" : "Kastaplast-Guld"
+	},
+	{
+		"?column?" : "Millennium-Mortar"
+	},
+	{
+		"?column?" : "Streamline-Runway"
+	},
+	{
+		"?column?" : "Latitude 64-XXX"
+	},
+	{
+		"?column?" : "Elevation Disc Golf-Interceptor"
+	},
+	{
+		"?column?" : "Discmania-DDx"
+	},
+	{
+		"?column?" : "Vibram-Obex"
+	},
+	{
+		"?column?" : "Innova-IT"
+	},
+	{
+		"?column?" : "Legacy-Phenom"
+	},
+	{
+		"?column?" : "DGA-Steady BL"
+	},
+	{
+		"?column?" : "Other-Alpas"
+	},
+	{
+		"?column?" : "Discraft-Talon"
+	},
+	{
+		"?column?" : "Mint Discs-Alpha"
+	},
+	{
+		"?column?" : "Innova-Valkyrie"
+	},
+	{
+		"?column?" : "Latitude 64-Ruby"
+	},
+	{
+		"?column?" : "Daredevil Discs-Timberwolf"
+	},
+	{
+		"?column?" : "Discraft-Wasp"
+	},
+	{
+		"?column?" : "Discmania-MD2"
+	},
+	{
+		"?column?" : "MVP-Vertex"
+	},
+	{
+		"?column?" : "Prodigy-D4"
+	},
+	{
+		"?column?" : "Yikun-Yan"
+	},
+	{
+		"?column?" : "Latitude 64-River"
+	},
+	{
+		"?column?" : "Dynamic Discs-Vandal"
+	},
+	{
+		"?column?" : "Discmania-Link"
+	},
+	{
+		"?column?" : "Discraft-Pulse"
+	},
+	{
+		"?column?" : "MVP-Atom"
+	},
+	{
+		"?column?" : "Discraft-Zeppelin"
+	},
+	{
+		"?column?" : "Westside Discs-Sling"
+	},
+	{
+		"?column?" : "Viking-Berserker"
+	},
+	{
+		"?column?" : "Vibram-Onyx"
+	},
+	{
+		"?column?" : "Mint Discs-Grackle"
+	},
+	{
+		"?column?" : "DGA-Hurricane"
+	},
+	{
+		"?column?" : "Infinite Discs-Sphinx"
+	},
+	{
+		"?column?" : "Innova-Invader"
+	},
+	{
+		"?column?" : "Other-Serpent"
+	},
+	{
+		"?column?" : "Innova-Eagle"
+	},
+	{
+		"?column?" : "Infinite Discs-Centurion"
+	},
+	{
+		"?column?" : "Westside Discs-Northman"
+	},
+	{
+		"?column?" : "Prodiscus-Slaidi"
+	},
+	{
+		"?column?" : "Lone Star Discs-Copperhead"
+	},
+	{
+		"?column?" : "Innova-Dart"
+	},
+	{
+		"?column?" : "Innova-Jay"
+	},
+	{
+		"?column?" : "Elevation Disc Golf-Binx, ecoFlex"
+	},
+	{
+		"?column?" : "Millennium-Aurora\/QMS"
+	},
+	{
+		"?column?" : "Innova-Stud"
+	},
+	{
+		"?column?" : "Disc Golf UK-The Baron"
+	},
+	{
+		"?column?" : "Prodigy-D3 Max"
+	},
+	{
+		"?column?" : "Innova-Pig"
+	},
+	{
+		"?column?" : "Innova-Mako3"
+	},
+	{
+		"?column?" : "Discraft-Anax"
+	},
+	{
+		"?column?" : "Discmania-P1x"
+	},
+	{
+		"?column?" : "Lone Star Discs-Seguin"
+	},
+	{
+		"?column?" : "Discmania-Mentor"
+	},
+	{
+		"?column?" : "Innova-Classic Roc"
+	},
+	{
+		"?column?" : "Discraft-Thrasher"
+	},
+	{
+		"?column?" : "Discraft-Flick"
+	},
+	{
+		"?column?" : "Trash Panda-Inner Core"
+	},
+	{
+		"?column?" : "MVP-Terra"
+	},
+	{
+		"?column?" : "Discraft-Ringer"
+	},
+	{
+		"?column?" : "Discmania-Astronaut"
+	},
+	{
+		"?column?" : "Legacy-Vengeance"
+	},
+	{
+		"?column?" : "Axiom Discs-Paradox"
+	},
+	{
+		"?column?" : "Innova-Panther"
+	},
+	{
+		"?column?" : "Other-Lawin"
+	},
+	{
+		"?column?" : "Innova-Spider"
+	},
+	{
+		"?column?" : "Latitude 64-Grace"
+	},
+	{
+		"?column?" : "Mint Discs-Bullet"
+	},
+	{
+		"?column?" : "Discmania-CD"
+	},
+	{
+		"?column?" : "Westside Discs-Adder"
+	},
+	{
+		"?column?" : "Axiom Discs-Crave"
+	},
+	{
+		"?column?" : "Prodigy-P Model OS"
+	},
+	{
+		"?column?" : "Gateway-Magic"
+	},
+	{
+		"?column?" : "Discraft-Avenger SS"
+	},
+	{
+		"?column?" : "Latitude 64-Culverin"
+	},
+	{
+		"?column?" : "Westside Discs-Anvil"
+	},
+	{
+		"?column?" : "Prodigy-PA3"
+	},
+	{
+		"?column?" : "Millennium-Omega Big Bead"
+	},
+	{
+		"?column?" : "Innova-Cobra"
+	},
+	{
+		"?column?" : "Mint Discs-Goat"
+	},
+	{
+		"?column?" : "Legacy-Nemesis"
+	},
+	{
+		"?column?" : "Discraft-Roach"
+	},
+	{
+		"?column?" : "Gateway-Journey"
+	},
+	{
+		"?column?" : "Gateway-Apache"
+	},
+	{
+		"?column?" : "Prodiscus-Laseri"
+	},
+	{
+		"?column?" : "Discraft-Sting"
+	},
+	{
+		"?column?" : "Prodigy-F Model S"
+	},
+	{
+		"?column?" : "Innova-Power Disc"
+	},
+	{
+		"?column?" : "Innova-Sonic"
+	},
+	{
+		"?column?" : "Innova-Tern"
+	},
+	{
+		"?column?" : "Lone Star Discs-Harpoon"
+	},
+	{
+		"?column?" : "Disctroyer-PA-3 Sparrow"
+	},
+	{
+		"?column?" : "Other-Stego"
+	},
+	{
+		"?column?" : "Prodigy-PX-3"
+	},
+	{
+		"?column?" : "Daredevil Discs-BigFoot"
+	},
+	{
+		"?column?" : "Millennium-Solstice"
+	},
+	{
+		"?column?" : "RPM-Kahu OS"
+	},
+	{
+		"?column?" : "Other-Andro C (Retooled)"
+	},
+	{
+		"?column?" : "Vibram-Notch"
+	},
+	{
+		"?column?" : "MVP-Dimension"
+	},
+	{
+		"?column?" : "Prodigy-MX-3"
+	},
+	{
+		"?column?" : "Innova-TL"
+	},
+	{
+		"?column?" : "MVP-Octane"
+	},
+	{
+		"?column?" : "Yikun-Twin Swords"
+	},
+	{
+		"?column?" : "Lone Star Discs-The Dome"
+	},
+	{
+		"?column?" : "Infinite Discs-Inca"
+	},
+	{
+		"?column?" : "Axiom Discs-Vanish"
+	},
+	{
+		"?column?" : "MVP-Inertia"
+	},
+	{
+		"?column?" : "Innova-Atlas"
+	},
+	{
+		"?column?" : "Lone Star Discs-Mad Cat"
+	},
+	{
+		"?column?" : "MVP-Resistor"
+	},
+	{
+		"?column?" : "DGA-Shockwave"
+	},
+	{
+		"?column?" : "Innova-Roc X3"
+	},
+	{
+		"?column?" : "Latitude 64-Pirate"
+	},
+	{
+		"?column?" : "Streamline-Electron Stabilizer"
+	},
+	{
+		"?column?" : "Other-Iridium"
+	},
+	{
+		"?column?" : "MVP-Entropy"
+	},
+	{
+		"?column?" : "DGA-Hellfire"
+	},
+	{
+		"?column?" : "Innova-Firefly"
+	},
+	{
+		"?column?" : "Discraft-Machete"
+	},
+	{
+		"?column?" : "Innova-Beast"
+	},
+	{
+		"?column?" : "MVP-Anode"
+	},
+	{
+		"?column?" : "Discraft-Passion"
+	},
+	{
+		"?column?" : "Discraft-XL"
+	},
+	{
+		"?column?" : "Innova-Aero"
+	},
+	{
+		"?column?" : "Millennium-Tank"
+	},
+	{
+		"?column?" : "Innova-Banshee"
+	},
+	{
+		"?column?" : "Innova-Aviar"
+	},
+	{
+		"?column?" : "MVP-Terra (Electron)"
+	},
+	{
+		"?column?" : "Dynamic Discs-Raider"
+	},
+	{
+		"?column?" : "Lone Star Discs-Penny Putter (Premium)"
+	},
+	{
+		"?column?" : "MVP-Catalyst"
+	},
+	{
+		"?column?" : "MVP-Relay"
+	},
+	{
+		"?column?" : "Millennium-Marksman"
+	},
+	{
+		"?column?" : "Other-Andro C"
+	},
+	{
+		"?column?" : "Latitude 64-Bryce"
+	},
+	{
+		"?column?" : "Latitude 64-Knight"
+	},
+	{
+		"?column?" : "Prodigy-D Model US"
+	},
+	{
+		"?column?" : "Discmania-Cloudbreaker"
+	},
+	{
+		"?column?" : "Dynamic Discs-Deputy"
+	},
+	{
+		"?column?" : "Wild Discs-Sea Otter"
+	},
+	{
+		"?column?" : "Westside Discs-King"
+	},
+	{
+		"?column?" : "Prodigy-X5"
+	},
+	{
+		"?column?" : "Prodigy-D1 Max"
+	},
+	{
+		"?column?" : "Elevation Disc Golf-Koi"
+	},
+	{
+		"?column?" : "Innova-Teebird"
+	},
+	{
+		"?column?" : "Innova-Nova"
+	},
+	{
+		"?column?" : "Dynamic Discs-Agent"
+	},
+	{
+		"?column?" : "Latitude 64-Halo"
+	},
+	{
+		"?column?" : "Dynamic Discs-Criminal"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Temple"
+	},
+	{
+		"?column?" : "Discraft-Xtreme"
+	},
+	{
+		"?column?" : "Westside Discs-Ahti"
+	},
+	{
+		"?column?" : "Innova-Stingray"
+	},
+	{
+		"?column?" : "Innova-Croc"
+	},
+	{
+		"?column?" : "Daredevil Discs-Sasquatch"
+	},
+	{
+		"?column?" : "Innova-Foxbat"
+	},
+	{
+		"?column?" : "Prodigy-P Model S"
+	},
+	{
+		"?column?" : "Other-Golem"
+	},
+	{
+		"?column?" : "Axiom Discs-Panic"
+	},
+	{
+		"?column?" : "Westside Discs-Longbowman"
+	},
+	{
+		"?column?" : "Hooligan Discs-Thread"
+	},
+	{
+		"?column?" : "MVP-Uplink"
+	},
+	{
+		"?column?" : "MVP-Reactor"
+	},
+	{
+		"?column?" : "Latitude 64-Spark"
+	},
+	{
+		"?column?" : "Gateway-Prophecy"
+	},
+	{
+		"?column?" : "Legacy-Gauge"
+	},
+	{
+		"?column?" : "Kastaplast-Krut"
+	},
+	{
+		"?column?" : "Streamline-Echo"
+	},
+	{
+		"?column?" : "Prodigy-PA1"
+	},
+	{
+		"?column?" : "Discraft-Buzzz OS"
+	},
+	{
+		"?column?" : "Vibram-Summit"
+	},
+	{
+		"?column?" : "Kastaplast-Rask"
+	},
+	{
+		"?column?" : "Discmania-PD (New)"
+	},
+	{
+		"?column?" : "Discmania-Shogun"
+	},
+	{
+		"?column?" : "Other-Nice!"
+	},
+	{
+		"?column?" : "Discmania-Rainmaker"
+	},
+	{
+		"?column?" : "Axiom Discs-Insanity"
+	},
+	{
+		"?column?" : "Westside Discs-Bard"
+	},
+	{
+		"?column?" : "Axiom Discs-Theory"
+	},
+	{
+		"?column?" : "Innova-Animal"
+	},
+	{
+		"?column?" : "Lone Star Discs-Bull Snake"
+	},
+	{
+		"?column?" : "Prodigy-F7"
+	},
+	{
+		"?column?" : "Innova-Starfire L"
+	},
+	{
+		"?column?" : "Infinite Discs-Ruin"
+	},
+	{
+		"?column?" : "Streamline-Trace"
+	},
+	{
+		"?column?" : "Innova-Python"
+	},
+	{
+		"?column?" : "Latitude 64-Claymore"
+	},
+	{
+		"?column?" : "Innova-Firestorm"
+	},
+	{
+		"?column?" : "Prodiscus-Legenda"
+	},
+	{
+		"?column?" : "Wild Discs-Hyena"
+	},
+	{
+		"?column?" : "Dynamic Discs-Bounty"
+	},
+	{
+		"?column?" : "DGA-Quake"
+	},
+	{
+		"?column?" : "Above Ground Level-Magnolia"
+	},
+	{
+		"?column?" : "Discmania-FD1"
+	},
+	{
+		"?column?" : "Gateway-Karma"
+	},
+	{
+		"?column?" : "Yikun-Shu"
+	},
+	{
+		"?column?" : "Infinite Discs-Raze"
+	},
+	{
+		"?column?" : "Latitude 64-Hope (Royal Proto)"
+	},
+	{
+		"?column?" : "Streamline-Flare"
+	},
+	{
+		"?column?" : "Innova-Aviar Driver"
+	},
+	{
+		"?column?" : "Innova-Gator"
+	},
+	{
+		"?column?" : "Daredevil Discs-Sabertooth"
+	},
+	{
+		"?column?" : "Prodigy-M Model S"
+	},
+	{
+		"?column?" : "Storm-Wall Cloud"
+	},
+	{
+		"?column?" : "Innova-Aviar3"
+	},
+	{
+		"?column?" : "Axiom Discs-Inspire"
+	},
+	{
+		"?column?" : "Prodigy-F Model US"
+	},
+	{
+		"?column?" : "Millennium-Taurus"
+	},
+	{
+		"?column?" : "Thought Space Athletics-Construct"
+	},
+	{
+		"?column?" : "AquaFlight-Pelican"
+	},
+	{
+		"?column?" : "Millennium-Quasar"
+	},
+	{
+		"?column?" : "Prodiscus-Jokeri"
+	},
+	{
+		"?column?" : "Lone Star Discs-Texas Ranger"
+	},
+	{
+		"?column?" : "Infinite Discs-Chariot"
+	},
+	{
+		"?column?" : "Legacy-Outlaw"
+	},
+	{
+		"?column?" : "Viking-Odin"
+	},
+	{
+		"?column?" : "Other-Apollo"
+	},
+	{
+		"?column?" : "Gateway-Chief"
+	},
+	{
+		"?column?" : "MVP-Tensor"
+	},
+	{
+		"?column?" : "Legacy-Enemy"
+	},
+	{
+		"?column?" : "Daredevil Discs-Owl"
+	},
+	{
+		"?column?" : "Legacy-Pursuit"
+	},
+	{
+		"?column?" : "Prodigy-H3"
+	},
+	{
+		"?column?" : "Westside Discs-Catapult"
+	},
+	{
+		"?column?" : "MVP-Axis"
+	},
+	{
+		"?column?" : "Axiom Discs-Excite"
+	},
+	{
+		"?column?" : "Gateway-Scout"
+	},
+	{
+		"?column?" : "Millennium-Orion LS"
+	},
+	{
+		"?column?" : "Elevation Disc Golf-Binx, Newcomer"
+	},
+	{
+		"?column?" : "Prodigy-F1"
+	},
+	{
+		"?column?" : "Legacy-Mongoose"
+	},
+	{
+		"?column?" : "Prodigy-M2"
+	},
+	{
+		"?column?" : "Discraft-Glide"
+	},
+	{
+		"?column?" : "Prodigy-H2 V2"
+	},
+	{
+		"?column?" : "Yikun-Yao"
+	},
+	{
+		"?column?" : "Discmania-P2"
+	},
+	{
+		"?column?" : "Kastaplast-Kaxe"
+	},
+	{
+		"?column?" : "DGA-Undertow"
+	},
+	{
+		"?column?" : "Gateway-Demon"
+	},
+	{
+		"?column?" : "Discmania-Mermaid"
+	},
+	{
+		"?column?" : "Kastaplast-Reko"
+	},
+	{
+		"?column?" : "Dynamic Discs-Convict"
+	},
+	{
+		"?column?" : "Legacy-Badger"
+	},
+	{
+		"?column?" : "Discraft-Zone"
+	},
+	{
+		"?column?" : "DGA-Aftershock"
+	},
+	{
+		"?column?" : "Dynamic Discs-Slammer"
+	},
+	{
+		"?column?" : "RPM-Kotuku"
+	},
+	{
+		"?column?" : "DGA-Tremor"
+	},
+	{
+		"?column?" : "Other-Tyrant"
+	},
+	{
+		"?column?" : "EV-7-Telos"
+	},
+	{
+		"?column?" : "Latitude 64-Maul"
+	},
+	{
+		"?column?" : "Dynamic Discs-Marshal"
+	},
+	{
+		"?column?" : "Dynamic Discs-Evidence"
+	},
+	{
+		"?column?" : "Legacy-Hunter"
+	},
+	{
+		"?column?" : "Discraft-Vulture"
+	},
+	{
+		"?column?" : "Hooligan Discs-Vibe"
+	},
+	{
+		"?column?" : "Vibram-Sole"
+	},
+	{
+		"?column?" : "DGA-Squall"
+	},
+	{
+		"?column?" : "Streamline-Lift"
+	},
+	{
+		"?column?" : "Latitude 64-Recoil"
+	},
+	{
+		"?column?" : "Daredevil Discs-Caribou"
+	},
+	{
+		"?column?" : "Discmania-P2 (new)"
+	},
+	{
+		"?column?" : "Gateway-Element"
+	},
+	{
+		"?column?" : "Wild Discs-Addax"
+	},
+	{
+		"?column?" : "Dynamic Discs-Sockibomb Slammer"
+	},
+	{
+		"?column?" : "Hooligan Discs-Flip"
+	},
+	{
+		"?column?" : "Innova-Boss"
+	},
+	{
+		"?column?" : "Daredevil Discs-Moose"
+	},
+	{
+		"?column?" : "Dynamic Discs-Truth"
+	},
+	{
+		"?column?" : "Gateway-Wizard"
+	},
+	{
+		"?column?" : "Above Ground Level-Redwood"
+	},
+	{
+		"?column?" : "Westside Discs-Sampo"
+	},
+	{
+		"?column?" : "Prodiscus-Razeri"
+	}
+]}

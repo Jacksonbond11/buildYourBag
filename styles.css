@@ -171,9 +171,13 @@ footer p {
 }
 
 #disc-container {
-  padding: 2%;
+  padding: 1%;
   border: 1px solid #0a7b38;
   border-radius: 5px;
+}
+
+#disc-image {
+  width: 70%;
 }
 
 #searchAndStats-container {

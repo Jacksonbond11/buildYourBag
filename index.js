@@ -1,9 +1,26 @@
+// const app = require("express")();
+// const { v4 } = require("uuid");
+
+// app.get("/api", (req, res) => {
+//   const path = `/api/item/${v4()}`;
+//   res.setHeader("Content-Type", "text/html");
+//   res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
+//   res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
+// });
+
+// app.get("/api/item/:slug", (req, res) => {
+//   const { slug } = req.params;
+//   res.end(`Item: ${slug}`);
+// });
+
+// module.exports = app;
+
 const express = require("express");
 const { Pool } = require("pg");
 const cors = require("cors");
 const app = express();
 const bcrypt = require("bcryptjs");
-const port = 3000;
+const port = 3002;
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 
@@ -52,7 +69,6 @@ app.get("/discdata", async (req, res) => {
   res.json(result.rows);
 });
 
-//add user bag info to database
 app.post("/add-disc", authenticateToken, async (req, res) => {
   console.log("add disc called");
   const discName = req.body.discName;

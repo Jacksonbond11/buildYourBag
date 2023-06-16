@@ -28,7 +28,7 @@ profileBtn.onclick = function () {
 function searchDisc() {
   let query = search.value;
   fetch(
-    `https://build-your-bag.vercel.app/search?q=${encodeURIComponent(query)}`,
+    `https://good-clouds-move.loca.lt/search?q=${encodeURIComponent(query)}`,
     {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -72,7 +72,7 @@ function searchDisc() {
 
 function displayDiscInfo(discName) {
   fetch(
-    "https://build-your-bag.vercel.app/discdata?q=" +
+    "https://good-clouds-move.loca.lt/discdata?q=" +
       encodeURIComponent(discName),
     {
       method: "GET",
@@ -84,6 +84,20 @@ function displayDiscInfo(discName) {
       var discInfo = data[0]; // Assuming you're expecting a single disc object
       var discContainer = document.getElementById("disc-data");
       discContainer.innerHTML = ""; // Clear previous disc information
+      if (discInfo) {
+        // Construct the image URL based on the disc name
+        var imageOfDisc =
+          "disc-images/" + discInfo.brand + "-" + discName + ".png";
+
+        var discContainer = document.getElementById("disc-data");
+
+        // Create an img element for the disc image
+        var imgElement = document.createElement("img");
+        imgElement.src = imageOfDisc;
+        imgElement.alt = discName;
+        imgElement.id = "disc-image";
+        discContainer.appendChild(imgElement);
+      }
 
       for (var prop in discInfo) {
         if (
@@ -108,7 +122,6 @@ function displayDiscInfo(discName) {
         imgElement.alt = discInfo.name;
         discContainer.appendChild(imgElement);
       }
-
       if (discInfo.purchase_url) {
         var propElement = document.createElement("p");
         var linkElement = document.createElement("a");
@@ -132,7 +145,7 @@ function displayDiscInfo(discName) {
 
 function addToBag(discName) {
   let userId = sessionUserID;
-  fetch("https://build-your-bag.vercel.app/add-disc", {
+  fetch("https://good-clouds-move.loca.lt/add-disc", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -152,7 +165,7 @@ function addToBag(discName) {
 function loadCategoryCount() {
   const userId = sessionUserID; // replace with actual user ID once implemented
   fetch(
-    `https://build-your-bag.vercel.app/get-category-count?userId=${userId}`,
+    `https://good-clouds-move.loca.lt/get-category-count?userId=${userId}`,
     {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
@@ -181,7 +194,7 @@ function loadCategoryCount() {
 function loadBag() {
   var userId = sessionUserID; // replace with actual user ID once implemented
   console.log("loadBag called with user id " + userId);
-  fetch(`https://build-your-bag.vercel.app/get-discs?userId=${userId}`, {
+  fetch(`https://good-clouds-move.loca.lt/get-discs?userId=${userId}`, {
     headers: {
       Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
     },
@@ -215,14 +228,11 @@ function loadBag() {
 
 function loadAverageSpeed() {
   var userId = sessionUserID;
-  fetch(
-    `https://build-your-bag.vercel.app/get-average-speed?userId=${userId}`,
-    {
-      headers: {
-        Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
-      },
-    }
-  )
+  fetch(`https://good-clouds-move.loca.lt/get-average-speed?userId=${userId}`, {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("accessToken")}`, // Add the token to the request headers
+    },
+  })
     .then((response) => {
       if (!response.ok) {
         throw new Error(response.statusText);
@@ -296,7 +306,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Check if user is logged in
   const token = localStorage.getItem("accessToken");
   if (token) {
-    fetch("https://build-your-bag.vercel.app/userinfo", {
+    fetch("https://good-clouds-move.loca.lt/userinfo", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -325,7 +335,7 @@ bag.addEventListener("click", function (e) {
   if (e.target.classList.contains("remove-disc")) {
     var discName = e.target.parentNode.querySelector("span").textContent;
     var userId = sessionUserID; // Replace with actual user ID from session or token once implemented
-    fetch(`https://build-your-bag.vercel.app/remove-disc`, {
+    fetch(`https://good-clouds-move.loca.lt/remove-disc`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
